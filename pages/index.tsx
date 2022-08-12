@@ -11,7 +11,7 @@ const Home: NextPage = () => {
   return (
     <>
     <div className='mx-8 my-2 md:mx-14 md:my-4 lg:mx-16 lg:my-4 container relative z-10 xl:mx-auto h-fit'>
-        <Navbar isToggle={isToggle} setIsToggle={setIsToggle} />
+        <Navbar />
         {/* <div className={`${isToggle ? "" : "hidden"}`}> */}
           <Hero />
         {/* </div> */}

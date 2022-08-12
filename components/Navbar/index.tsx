@@ -5,9 +5,9 @@ import type { FC } from "react";
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 
-const Navbar: FC = ({isToggle, setIsToggle}) => {
+const Navbar: FC = () => {
 
-	// const [isToggle, setIsToggle] = useState(false);
+	const [isToggle, setIsToggle] = useState(false);
 
 	const LinksText = ["Products", "Blogs", "About Us"];
 	return (
