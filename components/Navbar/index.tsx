@@ -1,4 +1,5 @@
 import { LogoIcon, LogoPrimary, LogoSecondary } from "@images";
+import { Button } from "@utils";
 import Image from "next/image";
 import Link from "next/link";
 import type { FC } from "react";
@@ -13,7 +14,7 @@ const Navbar: FC = () => {
 	return (
 		<>
 			{/* Medium to large Screens */}
-			<nav className="md:flex md:flex-col md:justify-center md:items-center hidden md:z-20 container md:w-full">
+			<nav className="md:flex md:flex-col md:justify-center md:items-center hidden md:z-20  mx-20 md:mx-24">
 				<div className="flex justify-between items-center w-full xl:space-x-20 md:space-x-1 lg:space-x-8">
 					<div className="flex  items-center space-x-1">
 						<Image src={LogoIcon} alt="logo" width={70} height={70}/>
@@ -23,23 +24,20 @@ const Navbar: FC = () => {
 						{
 							LinksText.map((text, index) => (
 								<Link href="/" key={`${text}+${index}`}>
-									<a className="font-Inter font-normal md:text-lg text-LogoText hover:text-NavTextHover cursor-pointer hover:border-b-2 hover:border-NavTextHover xl:text-3xl">{text}
+									<a className="font-Inter font-normal text-base text-LogoText  hover:text-NavTextHover cursor-pointer hover:border-b-2 hover:border-NavTextHover ">{text}
 								</a>
 								</Link>
 								)
 							)
 						}
 					</div>
-						<Link href="/">
-							<a className="font-Inter font-normal text-xl md:text-lg   cursor-pointer p-2 rounded-md hover:border-2 hover:bg-primaryBG drop-shadow-md hover:text-buttonBG bg-buttonBG text-buttonText xl:text-3xl">Contact Us
-						</a>
-						</Link>
+						<Button text="Contact Us" hrefLink="/"/>
 				</div>
 			</nav>
 		
 
 		{/* Mobile Screens */}
-			<nav className={`flex container  md:hidden z-20   ${!isToggle ? "flex-col h-screen" : ""}`}>
+			<nav className={`flex   md:hidden z-20 mx-20 md:mx-24   ${!isToggle ? "flex-col h-screen" : ""}`}>
 				<div className="flex justify-between items-center w-full">
 					<div className="flex  items-center space-x-1">
 						<Image src={LogoIcon} alt="logo" width={70} height={70}/>
@@ -55,20 +53,16 @@ const Navbar: FC = () => {
 				</div>
 				{
 				!isToggle && (
-						<div className="flex flex-col items-start justify-between space-y-10 ml-20 my-auto">
+						<div className="flex flex-col items-start justify-between space-y-10  my-auto">
 							{
-							LinksText.map((text, index) => (
+								LinksText.map((text, index) => (
 								<Link href="/" key={`${text}+${index}`}>
-									<a className="font-Inter font-normal text-2xl text-LogoText hover:text-NavTextHover cursor-pointer hover:border-b-2 hover:border-NavTextHover">{text}
-								</a>
+									<a className="font-Inter font-normal text-2xl text-LogoText hover:text-NavTextHover cursor-pointer hover:border-b-2 hover:border-NavTextHover">{text} </a>
 								</Link>
 								)
 							)
 							}
-						<Link href="/">
-							<a className="font-Inter font-normal text-xl md:text-lg   cursor-pointer p-2 rounded-md hover:border-2 hover:bg-primaryBG drop-shadow-md hover:text-buttonBG bg-buttonBG text-buttonText xl:text-3xl">Contact Us
-						</a>
-						</Link>
+						<Button text="Contact Us" hrefLink="/"/>
 					</div>
 					)
 				}

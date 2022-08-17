@@ -6,3 +6,5 @@ export { default as LogoSecondary } from "./mavolo_final_logo_secondary.svg";
 export { default as OEMImage } from "./OEM.png";
 export { default as ODMImage } from "./ODM.png";
 export { default as OBMImage } from "./OBM.png";
+export { default as InquiryImage } from "./InquiryForm.gif";
+export { default as OurLocationImage } from "./OurLocation.gif";
