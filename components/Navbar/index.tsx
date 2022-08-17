@@ -31,7 +31,9 @@ const Navbar: FC = () => {
 							)
 						}
 					</div>
-						<Button text="Contact Us" hrefLink="/"/>
+					<Link href="/">
+						<Button text="Contact Us"/>
+					</Link>
 				</div>
 			</nav>
 		
@@ -62,7 +64,9 @@ const Navbar: FC = () => {
 								)
 							)
 							}
-						<Button text="Contact Us" hrefLink="/"/>
+					<Link href="/">
+						<Button text="Contact Us"/>
+					</Link>
 					</div>
 					)
 				}

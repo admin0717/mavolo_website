@@ -17,8 +17,8 @@ const Hero: FC = () => {
 					</div>
 					<div className="font-Inter font-semibold text-lg tracking-tight leading-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ducimus enim harum eius iusto sunt animi ad. Reiciendis eaque facere adipisci </div>
 					<div className="flex justify-center items-start space-x-8">
-						<Button hrefLink="/" text="Contact Us"/>
-						<Button hrefLink="/" text="Inquiry"/>
+						<Link href="/"><Button text="Contact Us"/></Link>
+						<Link href="/"><Button text="Inquiry"/></Link>
 					</div>
 				</div>
 				<div className="">
