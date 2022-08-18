@@ -34,11 +34,10 @@ const Home: NextPage = () => {
       <Services />  
       <OurLocation/>
       <InquiryForm/>  
-    </div>
-      
+      </div>
     </>
     
   )
 }
 
-export default Home
+export default Home;
