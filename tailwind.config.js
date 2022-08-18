@@ -42,5 +42,5 @@ module.exports = {
       LogoText: "#54BD95",
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
