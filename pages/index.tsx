@@ -1,14 +1,20 @@
-import { Hero, Navbar, Services, Footer, OurLocation, InquiryForm } from '@components';
-import { useState } from "react";
+import { Footer, Hero, InquiryForm, Navbar, OurLocation, Services } from '@components';
+import { useEffect, useState } from "react";
 
+import { OurLocationImage } from '@images';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import { OurLocationImage } from '@images';
 
 const Home: NextPage = () => {
   	const [isToggle, setIsToggle] = useState(false);
-
+    useEffect(() => {
+        AOS.init({startEvent : 'load'});
+        AOS.refreshHard();
+      },[]);
+  
   return (
     <>
     <div className='mx-8 my-2 md:mx-14 md:my-4 lg:mx-16 lg:my-4  relative z-10 xl:mx-auto h-fit'>

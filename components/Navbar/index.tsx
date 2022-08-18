@@ -31,7 +31,7 @@ const Navbar: FC = () => {
 						}
 					</div>
 					<Link href="/">
-										<a className="font-Inter font-normal text- md:text-lg   cursor-pointer p-2 rounded-md hover:border-2 hover:bg-primaryBG drop-shadow-md hover:text-buttonBG bg-buttonBG text-buttonText">Contact Us</a>
+						<a className="font-Inter font-normal text- md:text-lg   cursor-pointer p-2 rounded-md hover:border-2 hover:bg-primaryBG drop-shadow-md hover:text-buttonBG bg-buttonBG text-buttonText">Contact Us</a>
 					</Link>
 				</div>
 			</nav>
