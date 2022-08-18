@@ -6,7 +6,7 @@ import type { FC } from "react";
 const Hero: FC = () => {
 	return (
 		<>
-			<header className="mx-24 flex flex-col justify-center items-center space-y-20 lg:space-y-0 lg:space-x-20 my-24 lg:flex-row ">
+			<header className="mx-24 flex flex-col justify-center items-center space-y-20 lg:space-y-0 lg:space-x-20 my-24 lg:flex-row relative">
 				<div className="flex flex-col justify-center items-start space-y-10 lg:w-1/2">
 					<div className="font-Inter font-bold lg:text-5xl text-4xl tracking-wide leading-tight">
 						Relief from daily <br/>charging struggles.

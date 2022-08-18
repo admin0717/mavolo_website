@@ -27,7 +27,7 @@ const Footer: FC = () => {
 					</div>
 					<div className="lg:w-1/3 flex items-center justify-center space-x-12 mr-20">
 						<div className="lg:w-1/2 flex flex-col items-start justify-center">
-							<Link href="/"><a className="hover:border-b-1 hover:border-[#ffffff]">Blog</a></Link>
+							<Link href="/"><a className="hover:text-blurBG]">Blog</a></Link>
 							<Link href="/">Products</Link>
 							<Link href="/">Contact Us</Link>
 						</div>

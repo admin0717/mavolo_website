@@ -13,7 +13,7 @@ const Navbar: FC = () => {
 	return (
 		<>
 			{/* Medium to large Screens */}
-			<nav className="md:flex md:flex-col md:justify-center md:items-center hidden md:z-20  mx-20 md:mx-24">
+			<nav className="md:flex md:flex-col md:justify-center md:items-center hidden md:z-20  px-20 md:px-24 sticky top-0 z-50 bg-[#fff] drop-shadow-sm w-full">
 				<div className="flex justify-between items-center w-full xl:space-x-20 md:space-x-1 lg:space-x-8">
 					<div className="flex  items-center space-x-1">
 						<Image src={LogoIcon} alt="logo" width={70} height={70}/>
@@ -38,7 +38,7 @@ const Navbar: FC = () => {
 		
 
 		{/* Mobile Screens */}
-			<nav className={`flex   md:hidden z-20 mx-20 md:mx-24   ${!isToggle ? "flex-col h-screen" : ""}`}>
+			<nav className={`flex   md:hidden w-full mx-20 md:mx-24 sticky top-0 z-50 bg-[#fff]  ${!isToggle ? "flex-col h-screen mx-0 px-24 overflow-scroll" : ""}`}>
 				<div className="flex justify-between items-center w-full">
 					<div className="flex  items-center space-x-1">
 						<Image src={LogoIcon} alt="logo" width={70} height={70}/>
