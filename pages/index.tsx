@@ -1,5 +1,6 @@
 import { Footer, Hero, InquiryForm, Navbar, OurLocation, Services } from '@components';
 import { useEffect, useState } from "react";
+import FloatingWhatsApp from 'react-floating-whatsapp';
 
 import { OurLocationImage } from '@images';
 import AOS from "aos";
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
   
   return (
     <>
+      
     <div className='mx-8 my-2 md:mx-14 md:my-4 lg:mx-16 lg:my-4  relative z-10 xl:mx-auto h-fit'>
         {/* <Navbar /> */}
         {/* <div className={`${isToggle ? "" : "hidden"}`}> */}
@@ -36,6 +38,7 @@ const Home: NextPage = () => {
       <InquiryForm/>  
       <Footer/>
       </div>
+      <FloatingWhatsApp  />
     </>
     
   )
