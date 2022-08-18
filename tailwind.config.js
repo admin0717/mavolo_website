@@ -42,5 +42,5 @@ module.exports = {
       LogoText: "#54BD95",
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [require("@tailwindcss/forms"), require("tailwind-scrollbar-hide")],
 };

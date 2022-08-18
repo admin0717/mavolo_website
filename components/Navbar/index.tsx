@@ -7,7 +7,7 @@ import { HiMenu, HiX } from "react-icons/hi";
 
 const Navbar: FC = () => {
 
-	const [isToggle, setIsToggle] = useState(false);
+	const [isToggle, setIsToggle] = useState(true);
 
 	const LinksText = ["Products", "Blogs", "About Us"];
 	return (
@@ -38,7 +38,7 @@ const Navbar: FC = () => {
 		
 
 		{/* Mobile Screens */}
-			<nav className={`flex   md:hidden w-full mx-20 md:mx-24 sticky top-0 z-50 bg-[#fff]  ${!isToggle ? "flex-col h-screen mx-0 px-24 overflow-scroll" : ""}`}>
+			<nav className={`flex   md:hidden w-full px-20 md:px-24 sticky top-0 z-50 bg-[#fff] drop-shadow-sm   ${!isToggle ? "flex-col h-screen mx-0 px-24  scrollbar-hide" : ""}`}>
 				<div className="flex justify-between items-center w-full">
 					<div className="flex  items-center space-x-1">
 						<Image src={LogoIcon} alt="logo" width={70} height={70}/>
@@ -54,7 +54,7 @@ const Navbar: FC = () => {
 				</div>
 				{
 				!isToggle && (
-						<div className="flex flex-col items-start justify-between space-y-10  my-auto">
+						<div className="flex flex-col items-start justify-between space-y-10  my-auto sticky scrollbar-hide">
 							{
 								LinksText.map((text, index) => (
 								<Link href="/" key={`${text}+${index}`}>
