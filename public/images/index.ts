@@ -8,3 +8,4 @@ export { default as ODMImage } from "./ODM.png";
 export { default as OBMImage } from "./OBM.png";
 export { default as InquiryImage } from "./InquiryForm.gif";
 export { default as OurLocationImage } from "./OurLocation.gif";
+export { default as LogoIconWhite } from "./mavolo_final_logo_icon_white.svg";

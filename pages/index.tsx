@@ -38,7 +38,7 @@ const Home: NextPage = () => {
       <InquiryForm/>  
       <Footer/>
       </div>
-      <FloatingWhatsApp  />
+      <FloatingWhatsApp phoneNumber={''} accountName={''}  />
     </>
     
   )
