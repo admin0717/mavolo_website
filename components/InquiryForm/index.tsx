@@ -6,12 +6,12 @@ import Form from "./Form";
 const InquiryForm: FC = () => {
 	return (
 		<>
-			<div className="mx-24 flex flex-col justify-center items-center lg:space-x-20 lg:flex-row my-24">
-				<div className="lg:w-1/2 w-full lg:ml-20">
+			<div className="mx-24 flex flex-col justify-center items-center lg:space-x-20 lg:flex-row my-24" data-aos="fade-up">
+				<div className="lg:w-1/2 w-full lg:ml-20" data-aos="fade-up">
 					<Image src={InquiryImage} alt="Inquire Us image" width={800} height={1000} />
 				</div>
 				<div className="lg:w-1/2 flex flex-col justify-center items-center space-y-8 w-full">
-					<div className="">
+					<div className="" data-aos="fade-up">
 						<h1 className="font-Inter font-bold text-4xl text-buttonBG ">Have any questions?</h1>
 					</div>
 					<Form />

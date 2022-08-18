@@ -34,6 +34,7 @@ const Home: NextPage = () => {
       <Services />  
       <OurLocation/>
       <InquiryForm/>  
+      <Footer/>
       </div>
     </>
     

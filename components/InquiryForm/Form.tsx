@@ -9,7 +9,7 @@ const Form: FC = () => {
   console.log(errors);
   
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col items-start justify-center space-y-6 ">
+    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col items-start justify-center space-y-6 " data-aos="fade-up">
       <div className='flex items-center justify-center space-x-6'>
         <div className="flex flex-col justify-center items-start space-y-3">
         <label htmlFor="Name">Your Name</label>
