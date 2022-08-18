@@ -1,5 +1,4 @@
 import { HeroImage1, LineRounded } from "@images";
-import { Button } from "@utils";
 import Image from "next/image";
 import Link from "next/link";
 import type { FC } from "react";
@@ -17,8 +16,10 @@ const Hero: FC = () => {
 					</div>
 					<div className="font-Inter font-semibold text-lg tracking-tight leading-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ducimus enim harum eius iusto sunt animi ad. Reiciendis eaque facere adipisci </div>
 					<div className="flex justify-center items-start space-x-8">
-						<Link href="/"><Button text="Contact Us"/></Link>
-						<Link href="/"><Button text="Inquiry"/></Link>
+						<Link href="/">
+											<a className="font-Inter font-normal text- md:text-lg   cursor-pointer p-2 rounded-md hover:border-2 hover:bg-primaryBG drop-shadow-md hover:text-buttonBG bg-buttonBG text-buttonText">Contact Us</a>
+						</Link>
+						<Link href="/">Enquiry</Link>
 					</div>
 				</div>
 				<div className="">

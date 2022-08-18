@@ -1,5 +1,4 @@
 import { LogoIcon, LogoPrimary, LogoSecondary } from "@images";
-import { Button } from "@utils";
 import Image from "next/image";
 import Link from "next/link";
 import type { FC } from "react";
@@ -32,7 +31,7 @@ const Navbar: FC = () => {
 						}
 					</div>
 					<Link href="/">
-						<Button text="Contact Us"/>
+										<a className="font-Inter font-normal text- md:text-lg   cursor-pointer p-2 rounded-md hover:border-2 hover:bg-primaryBG drop-shadow-md hover:text-buttonBG bg-buttonBG text-buttonText">Contact Us</a>
 					</Link>
 				</div>
 			</nav>
@@ -64,8 +63,8 @@ const Navbar: FC = () => {
 								)
 							)
 							}
-					<Link href="/">
-						<Button text="Contact Us"/>
+							<Link href="/">
+												<a className="font-Inter font-normal text- md:text-lg   cursor-pointer p-2 rounded-md hover:border-2 hover:bg-primaryBG drop-shadow-md hover:text-buttonBG bg-buttonBG text-buttonText">Contact Us</a>
 					</Link>
 					</div>
 					)
