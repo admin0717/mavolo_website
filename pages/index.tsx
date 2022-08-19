@@ -30,12 +30,12 @@ const Home: NextPage = () => {
     <div className="absolute w-[22rem] h-[22rem] border-r-[50%] bg-[#90ee90] bg-opacity-20 blur-[90px] bottom-0 left-0  -z-10"></div>
     <div className="absolute w-[22rem] h-[22rem] border-r-[50%] bg-[#90ee90] bg-opacity-20 blur-[90px] bottom-0 right-10  -z-10"></div>
     <div className="absolute w-[22rem] h-[22rem] border-r-[50%] bg-[#90ee90] bg-opacity-20 blur-[90px] top-15 left-0  -z-10"></div> */}
-    <div className="container mx-auto">
+    <div className="container mx-auto scroll-smooth">
       <Navbar />
       <Hero/>
       <Services />  
-      <OurLocation/>
-      <InquiryForm/>  
+        <OurLocation />
+          <InquiryForm/>  
       <Footer/>
       </div>
       <FloatingWhatsApp phoneNumber={''} accountName={''}  />

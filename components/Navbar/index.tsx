@@ -15,14 +15,16 @@ const Navbar: FC = () => {
 			{/* Medium to large Screens */}
 			<nav className="md:flex md:flex-col md:justify-center md:items-center hidden md:z-20  px-20 md:px-24 sticky top-0 z-50 bg-[#fff] drop-shadow-sm w-full">
 				<div className="flex justify-between items-center w-full xl:space-x-20 md:space-x-1 lg:space-x-8">
-					<div className="flex  items-center space-x-1">
-						<Image src={LogoIcon} alt="logo" width={70} height={70}/>
-						<span className="font-Inter  xl:text-4xl md:text-2xl font-bold text-NavText tracking-wide">MAVOLO</span>
+						<Link href="/" className="">
+					<div className="flex  items-center space-x-1 cursor-pointer">
+							<Image src={LogoIcon} alt="logo" width={70} height={70}/>
+							<span className="font-Inter  xl:text-4xl md:text-2xl font-bold text-NavText tracking-wide">MAVOLO</span>
 					</div>
+						</Link>
 					<div className="flex items-center justify-between lg:space-x-8 md:space-x-8">
 						{
 							LinksText.map((text, index) => (
-								<Link href="/" key={`${text}+${index}`}>
+								<Link href={`${text==="Contact Us" ? "#contact-us": "/"}`} key={`${text}+${index}`}>
 									<a className="font-Inter font-normal text-base text-LogoText  hover:text-NavTextHover cursor-pointer hover:border-b-2 hover:border-NavTextHover ">{text}
 								</a>
 								</Link>

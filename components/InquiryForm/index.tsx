@@ -6,7 +6,7 @@ import Form from "./Form";
 const InquiryForm: FC = () => {
 	return (
 		<div >
-			<div id="inquire" className="mx-24 flex flex-col justify-center items-center lg:space-x-20 lg:flex-row my-24" data-aos="fade-up">
+			<div className="mx-24 flex flex-col justify-center items-center lg:space-x-20 lg:flex-row my-24" data-aos="fade-up">
 				<div className="lg:w-1/2 w-full lg:ml-20" data-aos="fade-up">
 					<Image src={InquiryImage} alt="Inquire Us image" width={600} height={600} />
 				</div>

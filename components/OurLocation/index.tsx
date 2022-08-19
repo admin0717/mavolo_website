@@ -17,8 +17,8 @@ const OurLocation: FC = () => {
 						<Image src={OurLocationImage} alt="Our location in India" width={600} height={750} className=" rounded-xl w-full lg:w-1/2" data-aos="fade-up" />
 				</div>
 			</div>
+			<div id="inquire"></div>
 			</div>
-			
 		</>
 	)
 }
