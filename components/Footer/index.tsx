@@ -22,8 +22,12 @@ const Footer: FC = () => {
 				</div>
 				<div className="w-full flex flex-col justify-center items-center lg:flex-row space-y-12 text-[#fff]">
 					<div className="lg:w-2/3 flex flex-col items-start justify-center lg:pl-20 space-y-4">
-						<div>XYZ, <br/>Lorem ipsum dolor sit amet.<br/>Ahmedabad<br/>India - 123456</div>
-						<div>+91 999 999 9999</div>
+						<div>B-51, <br/>Second floor, Sector 57,<br/>Noida,<br/>India - 201301</div>
+						<div>+91 1204320122</div>
+					</div>
+
+					<div>
+						
 					</div>
 					<div className="lg:w-1/3 flex items-center justify-center space-x-12 mr-20">
 						<div className="lg:w-1/2 flex flex-col items-start justify-center">
@@ -38,6 +42,10 @@ const Footer: FC = () => {
 						</div>
 					</div>
 					
+				</div>
+				<div className="text-start text-[#fff] font-white lg:ml-20">
+					For any queries or concerns, write to us at <Link href="mailto:info@mavolo.in" className="g">info@mavolo.in
+					</Link>
 				</div>
 			</div>
 
