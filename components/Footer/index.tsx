@@ -7,7 +7,7 @@ import { FaFacebookSquare, FaInstagram, FaLinkedin, FaTwitterSquare } from "reac
 const Footer: FC = () => {
 	return (
 		<>
-			<div className="lg:mx-24 mx-12 mt-24 space-y-12  bg-buttonBG rounded-t-xl flex flex-col pb-12">
+			<footer id="contact-us" className="lg:mx-24 mx-12 mt-24 space-y-12  bg-buttonBG rounded-t-xl flex flex-col pb-12">
 				<div className=" flex items-center mt-10">
 				<div className="flex  items-center  space-x-1 w-1/2 lg:ml-12">
 					<Image src={LogoIconWhite} alt="logo" width={70} height={70} className=""/>
@@ -47,7 +47,7 @@ const Footer: FC = () => {
 					For any queries or concerns, write to us at <Link href="mailto:info@mavolo.in" className=""><a className="border-b-2  pb-1">info@mavolo.in</a> 
 					</Link>
 				</div>
-			</div>
+			</footer>
 
 		</>
 	)
