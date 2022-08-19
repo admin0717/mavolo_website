@@ -1,4 +1,5 @@
 import type { FC } from 'react';
+import { useState } from "react";
 import { useForm } from 'react-hook-form';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
@@ -8,6 +9,7 @@ const Form: FC = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = (data: Object) => console.log(data);
   console.log(errors);
+  const [value, setValue] = useState()
   
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col items-start justify-center space-y-6 " data-aos="fade-up">
@@ -25,13 +27,14 @@ const Form: FC = () => {
       </div>
         <div className='flex items-center justify-center space-x-6'>
           <div className="flex flex-col justify-center items-start space-y-3">
-        <label htmlFor="Mobile Phone">Your Phone Number</label>
-        
-        <input type="tel" placeholder="Mobile number" {...register("Mobile number", {required: true, minLength: 6, maxLength: 12})} className="rounded-xl border-buttonBG font-large font-Inter focus:border-buttonBG focus-ring focus:ring-buttonBG bg-blurBG bg-opacity-10"/>
+        <label htmlFor="Mobile Phone">Contact number*</label>
+        {/* <PhoneInput international countryCallingCodeEditable={false} defaultCountry="IN" value={value} onChange={setValue} className="rounded-xl border-buttonBG font-large font-Inter focus:border-buttonBG focus-ring focus:ring-buttonBG bg-blurBG bg-opacity-10"/> */}
+
+        <input type="tel" placeholder="Enter your number" {...register("Mobile number", {required: true, minLength: 6, maxLength: 12})} className="rounded-xl border-buttonBG font-large font-Inter focus:border-buttonBG focus-ring focus:ring-buttonBG bg-blurBG bg-opacity-10"/>
       </div>
 
       <div className="flex flex-col justify-center items-start space-y-3">
-        <label htmlFor="Message">Your Message</label>
+        <label htmlFor="Message">Your query is related to?*</label>
         <select {...register("Query related to:", { required: true })} className="rounded-xl border-buttonBG font-large font-Inter focus:border-buttonBG focus-ring focus:ring-buttonBG bg-blurBG bg-opacity-10">
           <option value="ODM">ODM</option>
           <option value="OEM">OEM</option>
