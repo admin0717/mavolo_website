@@ -6,7 +6,7 @@ const OurLocation: FC = () => {
 	return (
 		<>
 			<div className="mx-24 my-24 space-y-12 lg:space-y-0">
-				<h1 className="font-Inter font-bold text-3xl w-full lg:text-4xl flex justify-start items-start mr-2  mt-10  border-b-2 border-buttonBG pb-2" data-aos="fade-up">Our <span className="ml-4 text-buttonBG">Locations</span> </h1>
+				<h1 className="font-Inter font-bold text-3xl w-full lg:text-4xl flex justify-start items-start mr-2  mt-10  border-b-2 border-buttonBG pb-2" data-aos="fade-up">Our Locations </h1>
 				
 				<div className="flex flex-col justify-center items-start space-y-3">
 					<div className="flex flex-col  justify-center items-center space-y-10 lg:flex-row lg:space-x-12 lg:items-start  rounded-xl  space-x-4">

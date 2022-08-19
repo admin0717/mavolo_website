@@ -44,7 +44,7 @@ const Footer: FC = () => {
 					
 				</div>
 				<div className="text-start text-[#fff] font-white lg:ml-20">
-					For any queries or concerns, write to us at <Link href="mailto:info@mavolo.in" className="g">info@mavolo.in
+					For any queries or concerns, write to us at <Link href="mailto:info@mavolo.in" className=""><a className="border-b-2  pb-1">info@mavolo.in</a> 
 					</Link>
 				</div>
 			</div>
