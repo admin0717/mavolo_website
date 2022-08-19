@@ -12,7 +12,7 @@ const InquiryForm: FC = () => {
 				</div>
 				<div className="lg:w-1/2 flex flex-col justify-center items-start space-y-8 w-full">
 					<div className="text-start" data-aos="fade-up" >
-						<h1 className="font-Inter font-bold lg:text-4xl text-3xl  text-buttonBG ">Have any questions?</h1>
+						<h1 className="font-Inter font-bold lg:text-4xl text-3xl  ">Have any questions?</h1>
 					</div>
 					<Form />
 				</div>
