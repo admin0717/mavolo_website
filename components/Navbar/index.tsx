@@ -9,7 +9,7 @@ const Navbar: FC = () => {
 
 	const [isToggle, setIsToggle] = useState(true);
 
-	const LinksText = ["Products", "Blogs", "About Us"];
+	const LinksText = ["Products", "Blogs", "About Us", "Contact Us"];
 	return (
 		<>
 			{/* Medium to large Screens */}
@@ -19,7 +19,7 @@ const Navbar: FC = () => {
 						<Image src={LogoIcon} alt="logo" width={70} height={70}/>
 						<span className="font-Inter  xl:text-4xl md:text-2xl font-bold text-NavText tracking-wide">MAVOLO</span>
 					</div>
-					<div className="flex items-center justify-between lg:space-x-20 md:space-x-10">
+					<div className="flex items-center justify-between lg:space-x-8 md:space-x-8">
 						{
 							LinksText.map((text, index) => (
 								<Link href="/" key={`${text}+${index}`}>
@@ -30,9 +30,6 @@ const Navbar: FC = () => {
 							)
 						}
 					</div>
-					<Link href="/">
-						<a className="font-Inter font-normal text- md:text-lg   cursor-pointer p-2 rounded-md hover:border-2 hover:bg-primaryBG drop-shadow-md hover:text-buttonBG bg-buttonBG text-buttonText">Contact Us</a>
-					</Link>
 				</div>
 			</nav>
 		
@@ -63,9 +60,7 @@ const Navbar: FC = () => {
 								)
 							)
 							}
-							<Link href="/">
-												<a className="font-Inter font-normal text- md:text-lg   cursor-pointer p-2 rounded-md hover:border-2 hover:bg-primaryBG drop-shadow-md hover:text-buttonBG bg-buttonBG text-buttonText">Contact Us</a>
-					</Link>
+
 					</div>
 					)
 				}
