@@ -17,7 +17,7 @@ const Hero: FC = () => {
 					<div className="font-Inter font-bold lg:text-2xl md:text-xl text-md tracking-wide leading-tight">
 						Say YES to clutter-free style of living.
 					</div>
-					<div className="font-Inter font-large  text-sm lg:text-md  leading-6 tracking-wide text-[#A6A6A6]">Experience seamless charging and overcome the hassle of multiple chargers with the single point integrated charging solution which comes with compatible, compact and fast charging design.</div>
+					<div className="font-Inter font-large  text-sm lg:text-md  leading-6 tracking-wide">Experience seamless charging and overcome the hassle of multiple chargers with the single point integrated charging solution which comes with compatible, compact and fast charging design.</div>
 					<div className="flex justify-center items-start space-x-8">
 						<Link href="/">
 											<a className="font-Inter font-normal text- md:text-lg   cursor-pointer p-2 rounded-md hover:border-2 hover:bg-primaryBG drop-shadow-md hover:text-buttonBG bg-buttonBG text-buttonText px-4">Explore</a>
