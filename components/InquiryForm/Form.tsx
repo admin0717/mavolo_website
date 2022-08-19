@@ -1,6 +1,7 @@
 import type { FC } from 'react';
 import { useForm } from 'react-hook-form';
-
+import PhoneInput from 'react-phone-number-input';
+import 'react-phone-number-input/style.css';
 
 
 const Form: FC = () => {
@@ -12,19 +13,20 @@ const Form: FC = () => {
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col items-start justify-center space-y-6 " data-aos="fade-up">
       <div className='flex items-center justify-center space-x-6'>
         <div className="flex flex-col justify-center items-start space-y-3">
-        <label htmlFor="Name">Your Name</label>
-        <input  type="text" placeholder="Name" {...register("Name", {required: true, maxLength: 80})}  className="rounded-xl border-buttonBG font-large font-Inter focus:border-buttonBG focus-ring focus:ring-buttonBG bg-blurBG bg-opacity-10" />
+        <label htmlFor="Name">Your Name*</label>
+        <input  type="text" required placeholder="Enter your name" {...register("Name", {required: true, maxLength: 80})}  className="rounded-xl border-buttonBG font-large font-Inter focus:border-buttonBG focus-ring focus:ring-buttonBG bg-blurBG bg-opacity-10" />
       </div>
       
 
       <div className="flex flex-col justify-center items-start space-y-3">
-        <label htmlFor="Email">Your Email</label>
-        <input type="email" placeholder="Email" {...register("Email", {required: true, pattern: /^\S+@\S+$/i})} className="rounded-xl border-buttonBG font-large font-Inter focus:border-buttonBG focus-ring focus:ring-buttonBG bg-blurBG bg-opacity-10"/>
+        <label htmlFor="Email">Your Email*</label>
+        <input type="email" placeholder="Enter your email" required {...register("Email", {required: true, pattern: /^\S+@\S+$/i})} className="rounded-xl border-buttonBG font-large font-Inter focus:border-buttonBG focus-ring focus:ring-buttonBG bg-blurBG bg-opacity-10"/>
       </div>
       </div>
         <div className='flex items-center justify-center space-x-6'>
           <div className="flex flex-col justify-center items-start space-y-3">
         <label htmlFor="Mobile Phone">Your Phone Number</label>
+        
         <input type="tel" placeholder="Mobile number" {...register("Mobile number", {required: true, minLength: 6, maxLength: 12})} className="rounded-xl border-buttonBG font-large font-Inter focus:border-buttonBG focus-ring focus:ring-buttonBG bg-blurBG bg-opacity-10"/>
       </div>
 
