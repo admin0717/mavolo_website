@@ -2049,6 +2049,18 @@
   dependencies:
     "punycode" "^2.1.0"
 
+"use-count-up@^3.0.1":
+  "integrity" "sha512-jlVsXJYje6jh+xwQaCEYrwHoB+nRyillNEmr21bhe9kw7tpRzyrSq9jQs9UOlo+8hCFkuOmjUihL3IjEK/piVg=="
+  "resolved" "https://registry.npmjs.org/use-count-up/-/use-count-up-3.0.1.tgz"
+  "version" "3.0.1"
+  dependencies:
+    "use-elapsed-time" "3.0.2"
+
+"use-elapsed-time@3.0.2":
+  "integrity" "sha512-2EY9lJ5DWbAvT8wWiEp6Ztnl46DjXz2j78uhWbXaz/bg3OfpbgVucCAlcN8Bih6hTJfFTdVYX9L6ySMn5py/wQ=="
+  "resolved" "https://registry.npmjs.org/use-elapsed-time/-/use-elapsed-time-3.0.2.tgz"
+  "version" "3.0.2"
+
 "use-sync-external-store@1.2.0":
   "integrity" "sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA=="
   "resolved" "https://registry.npmjs.org/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz"
