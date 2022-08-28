@@ -30,7 +30,7 @@ const Home: NextPage = () => {
     <div className="absolute w-[22rem] h-[22rem] border-r-[50%] bg-[#90ee90] bg-opacity-20 blur-[90px] bottom-0 left-0  -z-10"></div>
     <div className="absolute w-[22rem] h-[22rem] border-r-[50%] bg-[#90ee90] bg-opacity-20 blur-[90px] bottom-0 right-10  -z-10"></div>
     <div className="absolute w-[22rem] h-[22rem] border-r-[50%] bg-[#90ee90] bg-opacity-20 blur-[90px] top-15 left-0  -z-10"></div> */}
-    <div className="mx-auto container border-box min-w-fit scroll-smooth">
+    <div className="container w-fit mx-auto scroll-smooth">
       <Navbar />
       <Hero/>
       <Services />  
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
           <InquiryForm/>  
       <Footer/>
       </div>
-      <FloatingWhatsApp phoneNumber={''} accountName={''}  />
+      {/* <FloatingWhatsApp phoneNumber={''} accountName={''}  /> */}
     </>
     
   )
