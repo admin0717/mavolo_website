@@ -1,3 +1,4 @@
+import { ImageCarousel } from "@components";
 import { HeroImage1, LineRounded } from "@images";
 import Image from "next/image";
 import Link from "next/link";
@@ -27,7 +28,7 @@ const Hero: FC = () => {
 						</Link>
 					</div>
 				</div>
-				<div className="" >
+				<div className="">
 					<Image src={HeroImage1} alt="HeroImage" width={400} height={400} />
 				</div>
 			</header>

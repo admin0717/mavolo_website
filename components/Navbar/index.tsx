@@ -37,7 +37,7 @@ const Navbar: FC = () => {
 		
 
 		{/* Mobile Screens */}
-			<nav className={`flex   md:hidden w-full px-20 md:px-24 sticky top-0 z-50 bg-[#fff] drop-shadow-sm   ${!isToggle ? "flex-col h-screen mx-0 px-24  scrollbar-hide" : ""}`}>
+			<nav className={`flex md:hidden w-full px-20 md:px-24 sticky top-0 z-50 bg-[#fff] drop-shadow-sm   ${!isToggle ? "flex-col h-screen mx-0 px-24  scrollbar-hide" : ""}`}>
 				<div className="flex justify-between items-center w-full">
 					<div className="flex  items-center space-x-1">
 						<Image src={LogoIcon} alt="logo" width={70} height={70}/>
