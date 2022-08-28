@@ -39,8 +39,9 @@ const Hero: FC = () => {
             </Link>
           </div>
         </div>
-        <div className="">
-          <Image src={HeroImage1} alt="HeroImage" width={400} height={400} />
+        <div className="lg:w-1/2	">
+          {/* <Image src={HeroImage1} alt="HeroImage" width={400} height={400} /> */}
+          <ImageCarousel />
         </div>
       </header>
     </>
