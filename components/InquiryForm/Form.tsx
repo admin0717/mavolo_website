@@ -15,29 +15,30 @@ const Form: FC = () => {
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col items-start justify-center space-y-6 " data-aos="fade-up">
       <div className='flex items-center justify-center space-x-6'>
         <div className="flex flex-col justify-center items-start space-y-3">
-        <label htmlFor="Name">Your Name*</label>
+        <label htmlFor="Name">Your Name<span className="text-[#FF0000] text-xl">*</span></label>
         <input  type="text" required placeholder="Enter your name" {...register("Name", {required: true, maxLength: 80})}  className="rounded-xl border-buttonBG font-large font-Inter focus:border-buttonBG focus-ring focus:ring-buttonBG bg-blurBG bg-opacity-10" />
       </div>
       
 
       <div className="flex flex-col justify-center items-start space-y-3">
-        <label htmlFor="Email">Your Email*</label>
+        <label htmlFor="Email">Your Email<span className="text-[#FF0000] text-xl">*</span></label>
         <input type="email" placeholder="Enter your email" required {...register("Email", {required: true, pattern: /^\S+@\S+$/i})} className="rounded-xl border-buttonBG font-large font-Inter focus:border-buttonBG focus-ring focus:ring-buttonBG bg-blurBG bg-opacity-10"/>
       </div>
       </div>
         <div className='flex items-center justify-center space-x-6'>
           <div className="flex flex-col justify-center items-start space-y-3">
-        <label htmlFor="Mobile Phone">Contact number*</label>
+        <label htmlFor="Mobile Phone">Contact number<span className="text-[#FF0000] text-xl">*</span></label>
         {/* <PhoneInput international countryCallingCodeEditable={false} defaultCountry="IN" value={value} onChange={setValue} className="rounded-xl border-buttonBG font-large font-Inter focus:border-buttonBG focus-ring focus:ring-buttonBG bg-blurBG bg-opacity-10"/> */}
 
         <input type="tel" placeholder="Enter your number" {...register("Mobile number", {required: true, minLength: 6, maxLength: 12})} className="rounded-xl border-buttonBG font-large font-Inter focus:border-buttonBG focus-ring focus:ring-buttonBG bg-blurBG bg-opacity-10"/>
       </div>
 
       <div className="flex flex-col justify-center items-start space-y-3">
-        <label htmlFor="Message">Your query is related to?*</label>
+        <label htmlFor="Message">Your query is related to?</label>
         <select {...register("Query related to:", { required: true })} className="rounded-xl border-buttonBG font-large font-Inter focus:border-buttonBG focus-ring focus:ring-buttonBG bg-blurBG bg-opacity-10">
           <option value="ODM">ODM</option>
           <option value="OEM">OEM</option>
+          <option value="OEM">OBM</option>
           <option value="Products">Products</option>
           <option value="Others">Others</option>
       </select>  
