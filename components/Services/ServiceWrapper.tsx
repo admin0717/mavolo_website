@@ -33,9 +33,9 @@ const ServiceWrapper: FC<PropTypes> = ({
           height={250}
           className="bg-buttonBG bg-opacity-50 rounded-xl hover:bg-buttonText hover:backdrop-blur-lg w-1/2 lg:w-1/2"
         />
-        <div className="w-1/2 lg:w-1/2">
+        <div className="w-1/2 lg:w-full">
           <div className="font-Inter text-2xl font-semibold">{title}</div>
-          <div className="font-Inter text-md lg:text-lg capitalize font-semibold">
+          <div className="font-Inter text-sm capitalize font-semibold">
             {fullForm}
           </div>
           <div className="font-Inter text-md font-normal w-[300px]">

@@ -57,7 +57,7 @@ const Form: FC = () => {
             defaultCountry="IN"
             value={value}
             style={{ borderRadius: "12px" }}
-            onChange={setValue}
+            onChange={() => {}}
             className="rounded-xl border-buttonBG font-large font-Inter focus:border-buttonBG focus-ring focus:ring-buttonBG bg-blurBG bg-opacity-10"
           />
 
