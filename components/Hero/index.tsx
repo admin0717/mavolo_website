@@ -21,7 +21,7 @@ const Hero: FC = () => {
           <div className="font-Inter font-bold lg:text-2xl md:text-3xl text-2xl tracking-wide leading-tight text-center mx-auto px-auto lg:mx-0 lg:px-0">
             Say YES to clutter-free style of living.
           </div>
-          <div className="font-Inter font-large  text-xl  lg:text-md  leading-6 text-center tracking-wide lg:text-start">
+          <div className="font-Inter font-large  text-sm md:text-md lg:text-lg  leading-6 text-center tracking-wide lg:text-start">
             Experience seamless charging and overcome the hassle of multiple
             chargers with the single point integrated charging solution which
             comes with compatible, compact and fast charging design.
@@ -39,7 +39,7 @@ const Hero: FC = () => {
             </Link>
           </div>
         </div>
-        <div className="lg:w-1/2	">
+        <div className="lg:w-1/2 mx-auto ml-16 md:ml-32 lg:ml-0">
           {/* <Image src={HeroImage1} alt="HeroImage" width={400} height={400} /> */}
           <ImageCarousel />
         </div>

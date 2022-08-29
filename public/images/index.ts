@@ -1,4 +1,7 @@
 export { default as HeroImage1 } from "./HeroImage1.png";
+export { default as HeroImage2 } from "./HeroImage2.png";
+export { default as HeroImage3 } from "./HeroImage3.gif";
+export { default as HeroImage4 } from "./HeroImage4.jpg";
 export { default as LineRounded } from "./LineRounded.svg";
 export { default as LogoIcon } from "./mavolo_final_logo_icon.svg";
 export { default as LogoPrimary } from "./mavolo_final_logo_primary.svg";
