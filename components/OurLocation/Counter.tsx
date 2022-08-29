@@ -8,14 +8,14 @@ const Counter: FC = () => {
         <div>
           <div className="capitalize  text-md">Number of Clients served:</div>
           <div className="font-bold text-4xl">
-            <CountUp isCounting end={1320} duration={3.2} />
+            <CountUp isCounting end={1320} duration={15} />
           </div>
         </div>
 
         <div>
           <div className="capitalize">Total Products</div>
           <div className="font-bold text-4xl">
-            <CountUp isCounting end={1320} duration={3.2} />
+            <CountUp isCounting end={1320} duration={15} />
           </div>
         </div>
       </div>

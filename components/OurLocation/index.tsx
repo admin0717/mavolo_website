@@ -1,6 +1,7 @@
 import { OurLocationImage } from "@images";
 import Image from "next/image";
 import type { FC } from "react";
+import { HiLocationMarker } from "react-icons/hi";
 import Counter from "./Counter";
 
 const OurLocation: FC = () => {
@@ -15,30 +16,61 @@ const OurLocation: FC = () => {
 
         <div className="flex flex-col justify-center items-start space-y-3 mx-3">
           <div className="flex flex-col  justify-center items-center space-y-10 lg:flex-row lg:space-x-12 lg:items-start  rounded-xl  space-x-4">
-            <div className="flex flex-col justify-between items-start space-y-8 w-full lg:w-1/2 my-auto mr-10">
+            <div className="flex flex-col justify-start items-start space-y-8 w-full lg:w-1/2 my-12 mr-10">
               <Counter />
               <div>
-                <div className="font-Inter lg:text-2xl text-md 	font-semibold">
-                  Our head office and production unit is in{" "}
-                  <span className="text-[#FF0000] font-bold border-b-2">
-                    Noida (Delhi-NCR).
-                  </span>
-                </div>
-                <div className="font-Inter lg:text-2xl text-md font-semibold">
-                  We operate with manufacturers, dealers and distributors across
-                  India.
-                </div>
+                <ul className="space-y-4">
+                  <li className="font-Inter text-lg list-disc">
+                    USB masters designing products for manufacturers,
+                    distributors and dealers.
+                  </li>
+                  <li className="font-Inter text-lg list-disc">
+                    Fastest growing B2B consumer electronics marketplace.
+                  </li>
+                  <li className="font-Inter text-lg list-disc">
+                    Optimised production and distribution channels.
+                  </li>
+                </ul>
               </div>
-              <div>
-                <div className="font-Inter lg:text-lg text-md 	font-semibold">
-                  Our head office and production unit is in{" "}
-                  <span className="text-[#FF0000] font-semibold border-b-2">
-                    Noida (Delhi-NCR).
-                  </span>
+              <div className="space-y-4">
+                <div className="font-Inter lg:text-lg text-md">
+                  Our head office and production unit is in
+                  <div className="flex items-center justify-start space-x-4">
+                    <HiLocationMarker className="fill-[#ff0000] w-8 h-8" />
+                    <div className="text-[#FF0000] font-semibold text-lg">
+                      Noida (Delhi-NCR).
+                    </div>
+                  </div>
                 </div>
-                <div className="font-Inter lg:text-lg text-md font-semibold">
+                <div className="font-Inter lg:text-lg text-md">
                   We operate with manufacturers, dealers and distributors across
                   India.
+                  <div className="grid grid-cols-2 ">
+                    <div className="flex items-center justify-start space-x-4">
+                      <HiLocationMarker className="w-8 h-8" />
+                      <div className="font-semibold text-lg">Mumbai</div>
+                    </div>
+                    <div className="flex items-center justify-start space-x-4">
+                      <HiLocationMarker className="w-8 h-8" />
+                      <div className="font-semibold text-lg">Gujarat</div>
+                    </div>
+                    <div className="flex items-center justify-start space-x-4">
+                      <HiLocationMarker className="w-8 h-8" />
+                      <div className="font-semibold text-lg">Delhi (NCR)</div>
+                    </div>
+                    <div className="flex items-center justify-start space-x-4">
+                      <HiLocationMarker className="w-8 h-8" />
+                      <div className="font-semibold text-lg">UP</div>
+                    </div>
+                    <div className="flex items-center justify-start space-x-4">
+                      <HiLocationMarker className="w-8 h-8" />
+                      <div className="font-semibold text-lg">Kolkata</div>
+                    </div>
+                    <div className="flex items-center justify-start space-x-4">
+                      <HiLocationMarker className="w-8 h-8" />
+                      <div className="font-semibold text-lg">Chennai</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
