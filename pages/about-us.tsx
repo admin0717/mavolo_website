@@ -31,7 +31,7 @@ const AboutUs: NextPage = () => {
           as well. We are moving in the direction of creating simple, adaptable
           and affordable products which add value to consumer&#39;s lives. All
           our products and services adhere to global quality standards, optimal
-          pricing and most importantly follows 'Consumer First&#39; policy.
+          pricing and most importantly follows &#39;Consumer First&#39; policy.
         </p>
         <p>
           Along with solving problems of our consumers, we are also focusing on
