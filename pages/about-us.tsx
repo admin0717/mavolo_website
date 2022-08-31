@@ -88,7 +88,6 @@ const AboutUs: NextPage = () => {
           charging solution, where one charger is enough for all your devices.
         </p>
       </div>
-      <Footer />
     </>
   );
 };
