@@ -9,7 +9,7 @@ const Counter: FC = () => {
           <div className="capitalize  text-md">Number of Clients served:</div>
           <div className="font-bold text-4xl">
             <h2>
-              <CountUp isCounting end={150} duration={3} />+
+              <CountUp isCounting end={150} duration={5} easing="linear" />+
             </h2>
           </div>
         </div>
@@ -18,7 +18,14 @@ const Counter: FC = () => {
           <div className="capitalize">Number of products sold</div>
           <div className="font-bold text-4xl">
             <h2>
-              <CountUp isCounting end={2000000} duration={3} />+
+              <CountUp
+                isCounting
+                start={150000}
+                end={200000}
+                duration={5}
+                easing="linear"
+              />
+              +
             </h2>
           </div>
         </div>
