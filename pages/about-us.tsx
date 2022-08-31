@@ -12,26 +12,26 @@ const AboutUs: NextPage = () => {
       <div className="mx-24 my-8 flex flex-col items-start justify-center space-y-4 font-Inter font-normal tracking-wide leading-6 text-justify">
         <p>
           The world is moving at such a faster pace that we often overlook the
-          small hurdles in our way and don't realize that somehow it is slowing
-          us. Walking on a road full of potholes makes you reroute yourself
-          after every few steps. What if we minimize them so that you reach your
-          destination much ahead of time and then realize how much of time and
-          energy you were losing in between 'unknowingly'.
+          small hurdles in our way and don&#39;t realize that somehow it is
+          slowing us. Walking on a road full of potholes makes you reroute
+          yourself after every few steps. What if we minimize them so that you
+          reach your destination much ahead of time and then realize how much of
+          time and energy you were losing in between &#39;unknowingly&#39;.
         </p>
         <p>
           With this idea our vision evolved. We started our journey in 2018 with
           the initial building stone as to become the problem solvers and solve
-          the problems which you don't even know existed in the first place. And
-          that's how we started 'Eminence'.
+          the problems which you don&#39;t even know existed in the first place.
+          And that&#39;s how we started &#39;Eminence&#39;.
         </p>
         <p>
           Eminence is a technology rich company specializing in development and
           manufacturing of world class products and solutions in the consumer
           electronics space and has a future eye to expand across other domains
           as well. We are moving in the direction of creating simple, adaptable
-          and affordable products which add value to consumer’s lives. All our
-          products and services adhere to global quality standards, optimal
-          pricing and most importantly follows 'Consumer First' policy.
+          and affordable products which add value to consumer&#39;s lives. All
+          our products and services adhere to global quality standards, optimal
+          pricing and most importantly follows 'Consumer First&#39; policy.
         </p>
         <p>
           Along with solving problems of our consumers, we are also focusing on
@@ -64,8 +64,8 @@ const AboutUs: NextPage = () => {
           Charging your gadgets is a pain across the globe. Piles of chargers
           for every different gadget and carrying everything while we are on
           move is tedious and cluttering. At Mavolo, we are addressing this
-          'Charge Anxiety' of our consumers and removing the obstacles which
-          they didn't know existed in the first place.
+          &#39;Charge Anxiety&#39; of our consumers and removing the obstacles
+          which they didn&#39;t know existed in the first place.
         </p>
         <p>
           We are the USB masters with optimized production and distribution
@@ -78,14 +78,14 @@ const AboutUs: NextPage = () => {
       </div>
       <div className="mx-24 my-8 flex flex-col items-start justify-center space-y-4 font-Inter font-normal tracking-wide leading-6 text-justify">
         <p>
-          For today’s world, charging and access to the internet are fundamental
-          needs. We cannot imagine our day without powering our devices and
-          accessing the internet. We see a future where these services will be
-          pre-installed in our homes. We need not to carry and maintain
-          different charges for our devices. The effort to make it real is that
-          the European Union has restricted all gadget manufacturers to use Type
-          C ports. These policies will push for a universal gadget charging
-          solution, where one charger is enough for all your devices.
+          For today&#39;s world, charging and access to the internet are
+          fundamental needs. We cannot imagine our day without powering our
+          devices and accessing the internet. We see a future where these
+          services will be pre-installed in our homes. We need not to carry and
+          maintain different charges for our devices. The effort to make it real
+          is that the European Union has restricted all gadget manufacturers to
+          use Type C ports. These policies will push for a universal gadget
+          charging solution, where one charger is enough for all your devices.
         </p>
       </div>
       <Footer />
