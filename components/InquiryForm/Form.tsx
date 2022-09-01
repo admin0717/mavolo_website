@@ -58,6 +58,7 @@ const Form: FC = () => {
             value={value}
             style={{ borderRadius: "12px" }}
             onChange={() => {}}
+            required
             className="rounded-xl border-buttonBG font-large font-Inter focus:border-buttonBG focus-ring focus:ring-buttonBG bg-blurBG bg-opacity-10"
           />
 

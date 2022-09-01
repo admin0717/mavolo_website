@@ -81,14 +81,20 @@ const Footer: FC = () => {
                   Write to us
                 </a>
               </Link>
+              <Link href="/">
+                <a className="text-lg font-Inter hover:border-b-2">Career</a>
+              </Link>
             </div>
           </div>
         </div>
         <div className="text-start text-[#fff] font-white lg:ml-20 mx-auto lg:mx-0">
           For any queries or concerns, write to us at{" "}
           <Link href="mailto:info@mavolo.in" className="">
-            <a className="border-b-2  pb-1">info@mavolo.in</a>
+            <a className="border-b-2  pb-1">support@mavolo.in</a>
           </Link>
+        </div>
+        <div className="text-center text-[#fff] font-white lg:ml-20 mx-auto lg:mx-0">
+          ©2022 Mavolo. All rights reserved
         </div>
       </footer>
     </>
