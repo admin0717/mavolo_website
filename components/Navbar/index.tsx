@@ -63,7 +63,11 @@ const Navbar: FC = () => {
           <div className="flex flex-col items-start justify-between space-y-10  my-auto sticky scrollbar-hide px-12">
             {LinksText.map((text, index) => (
               <Link href={Links[index]} key={`${text}+${index}`}>
-                <a className="font-Inter font-normal text-4xl text-LogoText hover:text-NavTextHover cursor-pointer hover:border-b-2 hover:border-NavTextHover">
+                <a
+                  className="font-Inter font-normal text-4xl text-LogoText hover:text-NavTextHover cursor-pointer hover:border-b-2 hover:border-NavTextHover"
+                  onClick={() => {
+                    setIsToggle((prev) => !prev);
+                  }}>
                   {text}{" "}
                 </a>
               </Link>
