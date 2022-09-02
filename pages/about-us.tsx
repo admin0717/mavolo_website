@@ -10,7 +10,7 @@ const AboutUs: NextPage = () => {
         Our Story
       </div>
       <TimelineComponent />
-      <div className="lg:mx-24 mx-12 my-8 flex flex-col items-start justify-center space-y-4 font-Inter font-normal tracking-wide leading-6 text-justify">
+      <div className="lg:mx-24 mx-12 my-8 flex flex-col items-start justify-center space-y-4 font-Inter font-normal tracking-wide leading-6 text-start">
         <p>
           The world is moving at such a faster pace that we often overlook the
           small hurdles in our way and don&#39;t realize that somehow it is
@@ -49,7 +49,7 @@ const AboutUs: NextPage = () => {
       <div className=" lg:mx-24  text-start font-bold  text-3xl border-b-2 mx-10 capitalize">
         About Mavolo
       </div>
-      <div className="lg:mx-24 mx-12 my-8 flex flex-col items-start justify-center space-y-4 font-Inter font-normal tracking-wide leading-6 text-justify">
+      <div className="lg:mx-24 mx-12 my-8 flex flex-col items-start justify-center space-y-4 font-Inter font-normal tracking-wide leading-6 text-start">
         <p>
           Mavolo by Eminence is one of the fastest growing B2B consumer
           electronics marketplace designing products for manufacturers,
@@ -77,7 +77,7 @@ const AboutUs: NextPage = () => {
       <div className=" lg:mx-24  text-start font-bold  text-3xl border-b-2 mx-10 capitalize">
         Our Vision
       </div>
-      <div className="lg:mx-24 mx-12 my-8 flex flex-col items-start justify-center space-y-4 font-Inter font-normal tracking-wide leading-6 text-justify">
+      <div className="lg:mx-24 mx-12 my-8 flex flex-col items-start justify-center space-y-4 font-Inter font-normal tracking-wide leading-6 text-start">
         <p>
           For today&#39;s world, charging and access to the internet are
           fundamental needs. We cannot imagine our day without powering our
