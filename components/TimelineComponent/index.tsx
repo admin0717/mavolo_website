@@ -1,10 +1,11 @@
 import type { FC } from "react";
 import { useRef } from "react";
+import { Chrono } from "react-chrono";
 
 const TimelineComponent = () => {
   return (
     <>
-      <div className="lg:mx-24 lg:mt-16 lg:mb-40 mx-4 mt-16 mb-40">
+      {/* <div className="lg:mx-24 lg:mt-16 lg:mb-40 mx-4 mt-16 mb-40">
         <div className="border-t-4 lg:mx-10  border-buttonBG relative">
           <div className="absolute lg:-top-7 lg:-left-2 -top-7 -left-1">
             <div className="lg:w-16 lg:h-16 h-12 w-12 rounded-full  bg-buttonBG text-[#fff] text-center flex items-center justify-center">
@@ -45,6 +46,61 @@ const TimelineComponent = () => {
             </div>
           </div>
         </div>
+      </div> */}
+      <div className="lg:mx-24 my-10">
+        <Chrono
+          mode="VERTICAL_ALTERNATING"
+          hideControls
+          disableAutoScrollOnClick
+          allowDynamicUpdate
+          cardHeight={50}
+          cardWidth={200}
+          theme={{
+            primary: "#54BD95",
+            secondary: "#fff",
+          }}>
+          <div>
+            <div className="font-Inter text-center text-xl font-semibold">
+              2018
+            </div>
+            <div className="font-Inter text-center text-md font-normal">
+              Launched the first product
+            </div>
+          </div>
+
+          <div>
+            <div className="font-Inter text-center text-xl font-semibold">
+              2019
+            </div>
+            <div className="font-Inter text-center text-md font-normal">
+              Increased our footproint beyond Delhi-NCR
+            </div>
+          </div>
+
+          <div>
+            <div className="font-Inter text-center text-xl font-semibold">
+              2021
+            </div>
+            <div className="font-Inter text-center text-md font-normal">
+              Served Delhi Government by installing USB in bus depots
+            </div>
+          </div>
+
+          <div>
+            <div className="font-Inter text-center text-xl font-semibold">
+              2022
+            </div>
+            <div className="font-Inter text-center text-md font-normal">
+              Current scale
+            </div>
+            <div className="font-Inter text-center text-sm font-normal">
+              10k+ units/month
+            </div>
+            <div className="font-Inter text-center text-sm font-normal">
+              MRR - 8 lakhs
+            </div>
+          </div>
+        </Chrono>
       </div>
     </>
   );
