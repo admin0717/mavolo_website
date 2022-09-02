@@ -34,11 +34,13 @@ const ServiceWrapper: FC<PropTypes> = ({
           className="bg-buttonBG bg-opacity-50 rounded-xl hover:bg-buttonText hover:backdrop-blur-lg w-1/2 lg:w-1/2"
         />
         <div className="w-1/2 lg:w-full">
-          <div className="font-Inter text-2xl font-semibold">{title}</div>
-          <div className="font-Inter text-sm capitalize font-semibold">
+          <div className="font-Inter lg:text-2xl text-3xl font-semibold">
+            {title}
+          </div>
+          <div className="font-Inter lg:text-sm text-xl capitalize font-semibold">
             {fullForm}
           </div>
-          <div className="font-Inter text-md font-normal w-[300px]">
+          <div className="font-Inter lg:text-md text-lg  font-normal w-[300px]">
             {description}
           </div>
         </div>
