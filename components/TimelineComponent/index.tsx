@@ -22,15 +22,15 @@ const TimelineComponent = () => {
               Increased our footprint beyond Delhi-NCR
             </div>
           </div>
-          <div className="absolute  lg:-top-7 lg:right-64 -top-7 right-9">
+          <div className="absolute  lg:-top-7 lg:right-64 -top-7 right-24">
             <div className="lg:w-16 lg:h-16 h-12 w-12 rounded-full  bg-buttonBG text-[#fff] text-center flex items-center justify-center">
               2021
             </div>
-            <div className="lg:w-40 w-28 text-start my-2 font-semibold font-Inter leading-5 lg:text-md text-xs">
+            <div className="lg:w-40 w-20 text-start my-2 font-semibold font-Inter leading-5 lg:text-md text-xs">
               Served Delhi Govt. by installing USB in bus depots
             </div>
           </div>
-          <div className="absolute  lg:-top-7 lg:-right-28 -top-7 -right-20">
+          <div className="absolute  lg:-top-7 lg:-right-28 -top-7 -right-4">
             <div className="lg:w-16 lg:h-16 w-12 h-12 rounded-full  bg-buttonBG text-[#fff] text-center flex items-center justify-center">
               2021
             </div>
