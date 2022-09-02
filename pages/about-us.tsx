@@ -1,4 +1,4 @@
-import { Footer, Navbar, TitleComponent } from "@components";
+import { Footer, Navbar, TimelineComponent, TitleComponent } from "@components";
 import type { NextPage } from "next";
 
 const AboutUs: NextPage = () => {
@@ -9,6 +9,7 @@ const AboutUs: NextPage = () => {
       <div className=" lg:mx-24  text-start font-bold  text-3xl border-b-2 mx-10 capitalize">
         Our Story
       </div>
+      <TimelineComponent />
       <div className="mx-24 my-8 flex flex-col items-start justify-center space-y-4 font-Inter font-normal tracking-wide leading-6 text-justify">
         <p>
           The world is moving at such a faster pace that we often overlook the

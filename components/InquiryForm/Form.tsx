@@ -58,7 +58,13 @@ const Form: FC = () => {
             value={value}
             style={{ borderRadius: "12px" }}
             onChange={() => {}}
-            required
+            rules={{ required: true }}
+            inputProps={{
+              name: "phone_number",
+              required: true,
+              autoFocus: true,
+            }}
+            inputRef={register}
             className="rounded-xl border-buttonBG font-large font-Inter focus:border-buttonBG focus-ring focus:ring-buttonBG bg-blurBG bg-opacity-10"
           />
 
