@@ -21,7 +21,7 @@ const Hero: FC = () => {
           <div className="font-Inter font-bold lg:text-2xl md:text-3xl text-3xl tracking-wide leading-tight text-center mx-auto px-auto lg:mx-0 lg:px-0">
             Say YES to clutter-free style of living.
           </div>
-          <div className="font-Inter font-large  text-lg md:text-md lg:text-lg  leading-6 text-center tracking-wide lg:text-start">
+          <div className="font-Inter font-large  text-xl md:text-md lg:text-lg  leading-7 text-center tracking-wide lg:text-start">
             Experience seamless charging and overcome the hassle of multiple
             chargers with the single point integrated charging solution which
             comes with compatible, compact and fast charging design.

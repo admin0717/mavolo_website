@@ -42,28 +42,28 @@ const Navbar: FC = () => {
         }`}>
         <div className="flex justify-between items-center w-full">
           <div className="flex  items-center space-x-1">
-            <Image src={LogoIcon} alt="logo" width={70} height={70} />
-            <span className="font-Inter text-2xl font-bold text-NavText tracking-wide">
+            <Image src={LogoIcon} alt="logo" width={90} height={90} />
+            <span className="font-Inter text-4xl font-bold text-NavText tracking-wide">
               MAVOLO
             </span>
           </div>
           {isToggle ? (
             <HiMenu
-              className="w-8 h-8 xl:w-16 xl:h-16 fill-buttonBG cursor-pointer"
+              className="w-12 h-12 xl:w-16 xl:h-16 fill-buttonBG cursor-pointer"
               onClick={() => setIsToggle(false)}
             />
           ) : (
             <HiX
-              className="w-8 h-8 fill-buttonBG cursor-pointer"
+              className="w-12 h-12 fill-buttonBG cursor-pointer"
               onClick={() => setIsToggle(true)}
             />
           )}
         </div>
         {!isToggle && (
-          <div className="flex flex-col items-start justify-between space-y-10  my-auto sticky scrollbar-hide">
+          <div className="flex flex-col items-start justify-between space-y-10  my-auto sticky scrollbar-hide px-12">
             {LinksText.map((text, index) => (
               <Link href={Links[index]} key={`${text}+${index}`}>
-                <a className="font-Inter font-normal text-2xl text-LogoText hover:text-NavTextHover cursor-pointer hover:border-b-2 hover:border-NavTextHover">
+                <a className="font-Inter font-normal text-4xl text-LogoText hover:text-NavTextHover cursor-pointer hover:border-b-2 hover:border-NavTextHover">
                   {text}{" "}
                 </a>
               </Link>
