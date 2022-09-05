@@ -29,6 +29,7 @@ const ImageCarousel: FC = () => {
             alt="HeroImage"
             width={400}
             height={400}
+            layout="responsive"
           />{" "}
         </div>
         <div className="panel">

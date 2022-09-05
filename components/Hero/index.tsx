@@ -7,8 +7,8 @@ import type { FC } from "react";
 const Hero: FC = () => {
   return (
     <>
-      <header className="lg:mx-24 mx-12 flex flex-col justify-center lg:items-start items-center space-y-20 lg:space-y-0 lg:space-x-20 mt-20 mb-24 lg:flex-row relative">
-        <div className="flex flex-col justify-center items-start space-y-8 md:space-y-12 lg:space-y-8 lg:w-1/2">
+      <header className="flex flex-col justify-center lg:items-start items-center space-y-20 lg:space-y-0 lg:space-x-20 mt-20 mb-24 lg:flex-row relative">
+        <div className="lg:mx-24 mx-12 flex flex-col justify-center items-start space-y-8 md:space-y-12 lg:space-y-8 lg:w-1/2">
           <div className="font-Inter font-bold lg:text-5xl md:text-6xl text-2xl tracking-wide lg:leading-tight leading-relaxed  text-center lg:text-start mx-auto px-auto lg:mx-0 lg:px-0">
             <div>
               <span className="text-buttonBG">Relief</span> from daily <br />
@@ -39,7 +39,7 @@ const Hero: FC = () => {
             </Link>
           </div>
         </div>
-        <div className="lg:w-1/2 mx-auto">
+        <div className="lg:w-1/2 mx-auto z-50 ">
           {/* <Image src={HeroImage1} alt="HeroImage" width={400} height={400} /> */}
           <ImageCarousel />
         </div>
