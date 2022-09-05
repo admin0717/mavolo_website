@@ -40,7 +40,7 @@ const ServiceWrapper: FC<PropTypes> = ({
           <div className="font-Inter lg:text-sm text-xl capitalize font-semibold">
             {fullForm}
           </div>
-          <div className="font-Inter lg:text-md text-lg  font-normal w-[300px]">
+          <div className="font-Inter lg:text-md text-lg  font-normal w-[150px] lg:w-[300px]">
             {description}
           </div>
         </div>

@@ -41,20 +41,23 @@ const Navbar: FC = () => {
           !isToggle ? "flex-col h-screen mx-0   scrollbar-hide" : ""
         }`}>
         <div className="flex justify-between items-center w-full">
-          <div className="flex  items-center space-x-1">
-            <Image src={LogoIcon} alt="logo" width={80} height={80} />
-            <span className="font-Inter text-4xl font-bold text-NavText tracking-wide">
-              MAVOLO
-            </span>
-          </div>
+          <Link href="/" className="">
+            <div className="flex  items-center space-x-1 cursor-pointer">
+              <Image src={LogoIcon} alt="logo" width={60} height={60} />
+              <span className="font-Inter text-3xl font-bold text-NavText tracking-wide">
+                MAVOLO
+              </span>
+            </div>
+          </Link>
+
           {isToggle ? (
             <HiMenu
-              className="w-12 h-12 xl:w-16 xl:h-16 fill-buttonBG cursor-pointer"
+              className="w-8 h-8 xl:w-16 xl:h-16 fill-buttonBG cursor-pointer"
               onClick={() => setIsToggle(false)}
             />
           ) : (
             <HiX
-              className="w-12 h-12 fill-buttonBG cursor-pointer"
+              className="w-8 h-8 fill-buttonBG cursor-pointer"
               onClick={() => setIsToggle(true)}
             />
           )}
@@ -62,7 +65,7 @@ const Navbar: FC = () => {
         {!isToggle && (
           <div className="flex flex-col items-start justify-between space-y-10  my-auto sticky scrollbar-hide px-12">
             {LinksText.map((text, index) => (
-              <Link href={Links[index]} key={`${text}+${index}`}>
+              <Link href={`${Links[index]}`} key={`${text}+${index}`}>
                 <a
                   className="font-Inter font-normal text-4xl text-LogoText hover:text-NavTextHover cursor-pointer hover:border-b-2 hover:border-NavTextHover"
                   onClick={() => {

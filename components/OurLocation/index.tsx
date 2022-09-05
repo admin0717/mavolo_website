@@ -7,9 +7,9 @@ import Counter from "./Counter";
 const OurLocation: FC = () => {
   return (
     <>
-      <div className="mx-24 my-24 space-y-12 lg:space-y-0">
+      <div className="lg:mx-24 mx-12 my-24  lg:space-y-0">
         <h1
-          className="font-Inter font-bold text-3xl w-full lg:text-4xl flex justify-start items-start mr-2  mt-10  border-b-2 border-buttonBG pb-2"
+          className="font-Inter font-bold text-3xl w-full lg:text-4xl flex justify-start items-start mr-2  mt-10 border-b-2 border-buttonBG pb-2"
           data-aos="fade-up">
           Our Locations{" "}
         </h1>

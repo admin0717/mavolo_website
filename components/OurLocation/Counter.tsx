@@ -4,7 +4,7 @@ import { CountUp } from "use-count-up";
 const Counter: FC = () => {
   return (
     <>
-      <div className="flex items-start justify-between space-x-10">
+      <div className="flex items-start justify-between lg:space-x-10 space-y-10 mx-auto text-center lg:mx-0 lg:text-start lg:space-y-0 flex-col lg:flex-row">
         <div>
           <div className="capitalize  text-md">Number of Clients served:</div>
           <div className="font-bold text-4xl">

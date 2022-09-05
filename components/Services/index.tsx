@@ -5,7 +5,7 @@ import ServiceWrapper from "./ServiceWrapper";
 const Services: FC = () => {
   return (
     <>
-      <div className="mx-24">
+      <div className="lg:mx-24 mx-12">
         <h1
           className=" mt-8 font-Inter font-bold text-5xl lg:text-3xl  md:mt-8 capitalize leading-10 tracking-wide  text-start border-b-2 pb-2 border-buttonBG"
           data-aos="fade-up">

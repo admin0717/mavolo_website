@@ -14,7 +14,7 @@ const Footer: FC = () => {
     <>
       <footer
         id="contact-us"
-        className="lg:mx-24 mx-12 mt-24 space-y-12  bg-buttonBG rounded-t-xl flex flex-col pb-12">
+        className="lg:mx-24  mt-24 space-y-12  bg-buttonBG rounded-t-xl flex flex-col pb-12">
         <div className=" flex items-center mt-10">
           <div className="flex  items-center  space-x-1 w-1/2 lg:ml-12">
             <Image
@@ -58,7 +58,7 @@ const Footer: FC = () => {
             </div>
             <div>+91 1204320122</div>
           </div>
-          <div className="lg:w-1/3 flex items-start justify-center space-x-12 lg:mr-10 mx-auto">
+          <div className="lg:w-1/3 flex items-start justify-center lg:space-x-12 space-x-4 lg:mr-10">
             {/* <div className="lg:w-1/2 flex flex-col items-start justify-center">
               <Link href="/">
                 <a className="hover:text-blurBG]">Blog</a>
@@ -66,14 +66,14 @@ const Footer: FC = () => {
               <Link href="/">Products</Link>
               <Link href="/">Contact Us</Link>
             </div> */}
-            <div className="lg:w-1/2 flex lg:flex-col lg:items-end items-start justify-center flex-row space-x-8">
-              <Link href="/">
+            <div className="lg:w-1/2 flex lg:flex-col lg:items-end items-start justify-center flex-row space-x-4 mx-4">
+              <Link href="/about-us">
                 <a className="text-lg font-Inter hover:border-b-2">About us</a>
               </Link>
-              <Link href="/">
+              <Link href="/products">
                 <a className="text-lg font-Inter hover:border-b-2">Products</a>
               </Link>
-              <Link href="/">
+              <Link href="/blogs">
                 <a className="text-lg font-Inter hover:border-b-2">Blogs</a>
               </Link>
               <Link href="#inquire">
@@ -81,13 +81,13 @@ const Footer: FC = () => {
                   Write to us
                 </a>
               </Link>
-              <Link href="/">
+              <Link href="/career">
                 <a className="text-lg font-Inter hover:border-b-2">Career</a>
               </Link>
             </div>
           </div>
         </div>
-        <div className="text-start text-[#fff] font-white lg:ml-20 mx-auto lg:mx-0">
+        <div className="text-start text-[#fff] font-white lg:ml-20 mx-10 lg:mx-0">
           For any queries or concerns, write to us at{" "}
           <Link href="mailto:info@mavolo.in" className="">
             <a className="border-b-2  pb-1">support@mavolo.in</a>

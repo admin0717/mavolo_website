@@ -7,7 +7,7 @@ const InquiryForm: FC = () => {
   return (
     <div>
       <div
-        className="mx-24 flex flex-col justify-center items-center lg:space-x-20 lg:flex-row my-24"
+        className="lg:mx-24 mx-12 flex flex-col justify-center items-center lg:space-x-20 lg:flex-row my-24"
         data-aos="fade-up">
         <div
           className="lg:w-1/2 w-full lg:ml-20 hidden lg:inline"

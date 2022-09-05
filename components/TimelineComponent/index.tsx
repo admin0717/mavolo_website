@@ -96,9 +96,9 @@ const TimelineComponent = () => {
             <div className="font-Inter text-center text-sm font-normal">
               10k+ units/month
             </div>
-            <div className="font-Inter text-center text-sm font-normal">
+            {/* <div className="font-Inter text-center text-sm font-normal">
               MRR - 8 lakhs
-            </div>
+            </div> */}
           </div>
         </Chrono>
       </div>

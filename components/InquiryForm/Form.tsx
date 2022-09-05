@@ -14,14 +14,26 @@ const Form: FC = () => {
   console.log(errors);
   const [value, setValue] = useState();
 
+  {
+    /* <input
+            type="tel"
+            placeholder="Enter your number"
+            {...register("Mobile number", {
+              required: true,
+              minLength: 6,
+              maxLength: 12,
+            })}
+            className="rounded-xl border-buttonBG font-large font-Inter focus:border-buttonBG focus-ring focus:ring-buttonBG bg-blurBG bg-opacity-10"
+          /> */
+  }
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
       className="flex flex-col items-start justify-center space-y-6 "
       data-aos="fade-up">
-      <div className="flex items-center justify-center space-x-6">
+      <div className="flex items-center justify-center lg:space-x-6 space-y-6 flex-col lg:flex-row">
         <div className="flex flex-col justify-center items-start space-y-3">
-          <label htmlFor="Name">
+          <label htmlFor="Name" className="">
             Your Name<span className="text-[#FF0000] text-xl">*</span>
           </label>
           <input
@@ -46,7 +58,7 @@ const Form: FC = () => {
           />
         </div>
       </div>
-      <div className="flex items-center justify-center space-x-6">
+      <div className="flex items-center justify-center lg:space-x-6 space-y-6 flex-col lg:flex-row">
         <div className="flex flex-col justify-center items-start space-y-3">
           <label htmlFor="Mobile Phone">
             Contact number<span className="text-[#FF0000] text-xl">*</span>
@@ -67,20 +79,9 @@ const Form: FC = () => {
             inputRef={register}
             className="rounded-xl border-buttonBG font-large font-Inter focus:border-buttonBG focus-ring focus:ring-buttonBG bg-blurBG bg-opacity-10"
           />
-
-          {/* <input
-            type="tel"
-            placeholder="Enter your number"
-            {...register("Mobile number", {
-              required: true,
-              minLength: 6,
-              maxLength: 12,
-            })}
-            className="rounded-xl border-buttonBG font-large font-Inter focus:border-buttonBG focus-ring focus:ring-buttonBG bg-blurBG bg-opacity-10"
-          /> */}
         </div>
 
-        <div className="flex flex-col justify-center items-start space-y-3">
+        <div className="flex flex-col justify-center items-start space-y-3 -ml-16 lg:ml-0">
           <label htmlFor="Message">Your query is related to?</label>
           <select
             {...register("Query related to:", { required: true })}
@@ -99,13 +100,13 @@ const Form: FC = () => {
         <textarea
           placeholder="Please enter your query:"
           {...register("Please enter your query:", { required: true })}
-          className="rounded-xl border-buttonBG font-large font-Inter focus:border-buttonBG focus-ring focus:ring-buttonBG bg-blurBG bg-opacity-10 resize-none"
+          className="rounded-xl w-fit border-buttonBG font-large font-Inter focus:border-buttonBG focus-ring focus:ring-buttonBG bg-blurBG bg-opacity-10 resize-none "
         />
       </div>
 
       <button
         type="submit"
-        className="font-Inter font-normal text- md:text-lg   cursor-pointer p-2 rounded-md hover:border-2 hover:bg-primaryBG drop-shadow-md hover:text-buttonBG bg-buttonBG text-buttonText px-4 ">
+        className="font-Inter font-normal text-xl md:text-lg   cursor-pointer p-2 rounded-md hover:border-2 hover:bg-primaryBG drop-shadow-md hover:text-buttonBG bg-buttonBG text-buttonText px-4">
         Submit
       </button>
     </form>

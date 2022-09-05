@@ -1,10 +1,11 @@
 import { Footer, Navbar, TimelineComponent, TitleComponent } from "@components";
 import type { NextPage } from "next";
+import FloatingWhatsApp from "react-floating-whatsapp";
 
 const AboutUs: NextPage = () => {
   return (
     <>
-      <div className="container w-fit mx-auto scroll-smooth">
+      <div className="container w-full mx-auto scroll-smooth">
         <Navbar />
         <TitleComponent title="About Us" />
         <div className=" lg:mx-24  text-start font-bold  text-3xl border-b-2 mx-10 capitalize">
@@ -94,6 +95,7 @@ const AboutUs: NextPage = () => {
           </p>
         </div>
       </div>
+      <FloatingWhatsApp phoneNumber={""} accountName={""} />
     </>
   );
 };
