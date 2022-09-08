@@ -18,10 +18,11 @@ import Image from "next/image";
 
 const Home: NextPage = () => {
   const [isToggle, setIsToggle] = useState(false);
-  useEffect(() => {
-    AOS.init({ startEvent: "load" });
-    AOS.refreshHard();
-  }, []);
+
+  // useEffect(() => {
+  //   // AOS.init({ startEvent: "load" });
+  //   // AOS.refreshHard();
+  // }, []);
 
   return (
     <>

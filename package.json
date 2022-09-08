@@ -21,7 +21,6 @@
     "react-icons": "^4.4.0",
     "react-id-swiper": "^4.0.0",
     "react-phone-number-input": "^3.2.7",
-    "swiper": "^8.3.2",
     "use-count-up": "^3.0.1"
   },
   "devDependencies": {

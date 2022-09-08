@@ -2328,7 +2328,7 @@
   "resolved" "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   "version" "1.0.0"
 
-"swiper@^8.3.2", "swiper@>=5.0.0":
+"swiper@>=5.0.0":
   "integrity" "sha512-8wsC7ORYvVSnLUoxs2+xmfLrDPNjBVQXMCFbOlqtHeON6wtu/blOyySDr8TCBCdse1bdcIbn7m8xJNxVFL8o4Q=="
   "resolved" "https://registry.npmjs.org/swiper/-/swiper-8.3.2.tgz"
   "version" "8.3.2"

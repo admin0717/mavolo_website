@@ -30,7 +30,8 @@ const Form: FC = () => {
     <form
       onSubmit={handleSubmit(onSubmit)}
       className="flex flex-col items-start justify-center space-y-6 "
-      data-aos="fade-up">
+      // data-aos="fade-up"
+    >
       <div className="flex items-center justify-center lg:space-x-6 space-y-6 flex-col lg:flex-row">
         <div className="flex flex-col justify-center items-start space-y-3">
           <label htmlFor="Name" className="">
@@ -71,11 +72,6 @@ const Form: FC = () => {
             style={{ borderRadius: "12px" }}
             onChange={() => {}}
             rules={{ required: true }}
-            inputProps={{
-              name: "phone_number",
-              required: true,
-              autoFocus: true,
-            }}
             inputRef={register}
             className="rounded-xl border-buttonBG font-large font-Inter focus:border-buttonBG focus-ring focus:ring-buttonBG bg-blurBG bg-opacity-10"
           />

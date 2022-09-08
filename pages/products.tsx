@@ -1,4 +1,4 @@
-import { Navbar, TitleComponent } from "@components";
+import { Footer, Navbar, TitleComponent } from "@components";
 import {
   Product1aImage,
   Product1bImage,
@@ -11,8 +11,35 @@ import {
   Product4aImage,
 } from "@images";
 import type { NextPage } from "next";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+import type { FC } from "react";
 import FloatingWhatsApp from "react-floating-whatsapp";
+
+export interface ProductCardType {
+  img: StaticImageData;
+  title: String;
+  children: React.ReactNode;
+}
+
+export const ProductCard: FC<ProductCardType> = ({
+  img,
+  title,
+  children,
+}: ProductCardType) => {
+  return (
+    <div className="flex flex-col space-y-2 rounded-xl ">
+      <div className="p-2">
+        <Image src={img} alt="Image1" width="400" height="350" />
+      </div>
+      <div className="p-4 space-y-4">
+        <div className="font-Inter text-3xl tracking-wide leading-7 font-semibold text-start flex-start bg-button">
+          {title}
+        </div>
+        <div className="">{children}</div>
+      </div>
+    </div>
+  );
+};
 
 const Products: NextPage = () => {
   return (
@@ -20,149 +47,49 @@ const Products: NextPage = () => {
       <div className="container w-full scroll-smooth mx-auto">
         <Navbar />
         <TitleComponent title="Our Products" />
-        <div className="lg:mx-24 mx-12 font-Inter space-y-2">
-          <div className="text-2xl font-semibold">
-            We have 3 major products.
-          </div>
-          <ul className="text-lg font-normal list-disc mx-10">
-            <li>USB 10W</li>
-            <li>USB 12W</li>
-            <li>USB 18W</li>
-          </ul>
+        <div className="mx-12 lg:mx-24 grid lg:grid-cols-3 gap-16 md:grid-cols-2 grid-cols-1">
+          <ProductCard title="10W and 12W" img={Product1aImage}>
+            <ul className="space-y-2 list-disc list-outside pl-4">
+              <li className="">Single port USB charger socket</li>
+              <li>Compliant with QC 2.0 and QC 3.0</li>
+              <li>
+                Avaialable in 30+ varieties (Roma, Penta Modular, GM, Orient
+                etc)
+              </li>
+            </ul>
+          </ProductCard>
+          <ProductCard title="18W (QCPD)" img={Product1aImage}>
+            <ul className="space-y-2 list-disc list-outside pl-4">
+              <li className="">Dual port USB charger socket</li>
+              <li>Compliant with QC 2.3, QC 4+ and PD 3.0</li>
+              <li>Available in single module Roma</li>
+            </ul>
+          </ProductCard>
         </div>
-        <div className=" lg:mx-24  text-start font-bold  text-3xl border-b-2 mx-10 capitalize my-8">
-          10W and 12 W
-        </div>
-        <div className="lg:mx-24 mx-12 flex flex-col justify-center items-center lg:space-x-12 lg:flex-row my-24">
-          <div
-            className="lg:w-1/3 w-full lg:ml-10 lg:inline"
-            data-aos="fade-up">
-            <Image
-              src={Product1dImage}
-              alt="Inquire Us image"
-              width={250}
-              height={250}
-            />
-          </div>
-          <div className="lg:w-2/3 flex flex-col justify-center items-start space-y-8 w-full">
-            <div className="my-8 flex flex-col items-start justify-center space-y-4 font-Inter font-normal tracking-wide leading-6 text-start">
-              <ul className="font-Inter lg:text-xl text-xl space-y-4 list-disc list-outside">
-                <li>Single port USB charger socket</li>
-                <li>Compliant with QC 2.0 and QC 3.0</li>
-                <li>
-                  Avaialable in 30+ varieties (Roma, Penta Modular, GM, Orient
-                  etc)
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div className=" lg:mx-24  text-start font-bold  text-3xl border-b-2 mx-10 capitalize my-8">
-          18W (QCPD)
-        </div>
-
-        <div className="lg:mx-24 mx-12 flex flex-col justify-center items-center lg:space-x-12 lg:flex-row-reverse my-24">
-          <div
-            className="lg:w-1/3 w-full lg:ml-10 lg:inline"
-            data-aos="fade-up">
-            <Image
-              src={Product2cImage}
-              alt="Inquire Us image"
-              width={250}
-              height={250}
-            />
-          </div>
-          <div className="lg:w-2/3 flex flex-col justify-center items-start space-y-8 w-full">
-            <div className="my-8 flex flex-col items-start justify-center space-y-4 font-Inter font-normal tracking-wide leading-6 text-start">
-              <ul className="font-Inter lg:text-xl text-xl space-y-4 list-disc list-outside">
-                <li>Dual port USB charger socket</li>
-                <li>Compliant with QC 2.3, QC 4+ and PD 3.0</li>
-                <li>Available in single module Roma</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
         <TitleComponent title="Future Products" />
-        <div className=" lg:mx-24  text-start font-bold  text-3xl border-b-2 mx-10 capitalize my-8">
-          E1
-        </div>
-        <div className="lg:mx-24 mx-12 flex flex-col justify-center items-center lg:space-x-12 lg:flex-row my-24">
-          <div
-            className="lg:w-1/3 w-full lg:ml-10 lg:inline"
-            data-aos="fade-up">
-            <Image
-              src={Product1dImage}
-              alt="Inquire Us image"
-              width={250}
-              height={250}
-            />
+        <div className="mx-12 lg:mx-24 space-y-4">
+          <div className="grid grid-cols-3 gap-8">
+            <Image src={Product1bImage} alt="Product 3" />
+            <Image src={Product2bImage} alt="Product 3" />
+            <Image src={Product3aImage} alt="Product 3" />
           </div>
-          <div className="lg:w-2/3 flex flex-col justify-center items-start space-y-8 w-full">
-            <div className="my-8 flex flex-col items-start justify-center space-y-4 font-Inter font-normal tracking-wide leading-6 text-start">
-              <ul className="font-Inter lg:text-xl text-xl space-y-4 list-disc list-outside">
-                <li>
-                  100W power unit compatible with all user gadgets (Mobile
-                  Phones, Laptops, Tablets etc)
-                </li>
-                <li>Compliant with PPS, PD 3.0 and QC4</li>
-                <li>Physical form factor : Table/Wall mount + Adaptor</li>
-                <li>Wifi and Bluetooth Connectivity enabled</li>
-                <li>
-                  Easy, Fast, Integrated, Portable, Small form factor, ONE stop
-                  solution for all your Gadget Charging need.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div className=" lg:mx-24  text-start font-bold  text-3xl border-b-2 mx-10 capitalize my-8">
-          Cassette
-        </div>
-        <div className="lg:mx-24 mx-12 flex flex-col justify-center items-center lg:space-x-12 lg:flex-row-reverse my-24">
-          <div
-            className="lg:w-1/3 w-full lg:ml-10 lg:inline"
-            data-aos="fade-up">
-            <Image
-              src={Product4aImage}
-              alt="Inquire Us image"
-              width={250}
-              height={250}
-            />
-          </div>
-          <div className="lg:w-2/3 flex flex-col justify-center items-start space-y-8 w-full">
-            <div className="my-8 flex flex-col items-start justify-center space-y-4 font-Inter font-normal tracking-wide leading-6 text-start">
-              <ul className="font-Inter lg:text-xl text-xl space-y-4 list-disc list-outside">
-                <li>
-                  USB cable wrapped around self rollable cylinder. These
-                  cassettes will greatly improve USB cable handling.
-                </li>
-                <li>Push Pull Recoil mechanism for all new user experience.</li>
-                <li>Cable rolls back with the release of lock.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div className=" lg:mx-24  text-start font-bold  text-3xl border-b-2 mx-10 capitalize my-8">
-          USP
-        </div>
-        <div className="lg:mx-24 mx-12 my-8 flex flex-col items-start justify-center space-y-4 font-Inter font-normal tracking-wide leading-6 text-start">
-          <ul className="font-Inter lg:text-xl text-xl space-y-4 list-disc list-outside lg:ml-10">
-            <li>Increase consumer productivity and reduce charge anxiety</li>
+          <div className="font-Inter text-3xl font-semibold ">E1</div>
+          <ul className="space-y-2 list-disc list-outside pl-4">
             <li>
-              FAST access to reliable power : Current configuration with each
-              device before pumping charge
+              100W power unit compatible with all user gadgets (Mobile Phones,
+              Laptops, Tablets etc)
             </li>
+            <li>Compliant with PPS, PD 3.0 and QC4</li>
+            <li>Physical form factor : Table/Wall mount + Adaptor</li>
+            <li>Physical form factor : Table/Wall mount + Adaptor</li>
+            <li>Wifi and Bluetooth Connectivity enabled</li>
             <li>
-              Saves tons of E-waste : With E1 vision unnecessary charger waste
-              will reduce
+              Easy, Fast, Integrated, Portable, Small form factor, ONE stop
+              solution for all your Gadget Charging need.
             </li>
-            <li>Connectivity : Keep your devices connected and alive.</li>
           </ul>
         </div>
+        <Footer />
       </div>
       <FloatingWhatsApp phoneNumber={""} accountName={""} />
     </>

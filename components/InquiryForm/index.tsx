@@ -8,10 +8,12 @@ const InquiryForm: FC = () => {
     <div>
       <div
         className="lg:mx-24 mx-12 flex flex-col justify-center items-center lg:space-x-20 lg:flex-row my-24"
-        data-aos="fade-up">
+        // data-aos="fade-up"
+      >
         <div
           className="lg:w-1/2 w-full lg:ml-20 hidden lg:inline"
-          data-aos="fade-up">
+          // data-aos="fade-up"
+        >
           <Image
             src={InquiryImage}
             alt="Inquire Us image"
@@ -20,7 +22,10 @@ const InquiryForm: FC = () => {
           />
         </div>
         <div className="lg:w-1/2 flex flex-col justify-center items-start space-y-8 w-full">
-          <div className="text-start" data-aos="fade-up">
+          <div
+            className="text-start"
+            //  data-aos="fade-up"
+          >
             <h1 className="font-Inter font-bold lg:text-4xl text-3xl  ">
               Have any questions?
             </h1>
