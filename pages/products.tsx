@@ -23,12 +23,10 @@ import FloatingWhatsApp from "react-floating-whatsapp";
 export interface ProductCardType {
   title: String;
   children: React.ReactNode;
-  imgArray: String[];
 }
 
 export const ProductCard: FC<ProductCardType> = ({
   title,
-  imgArray,
   children,
 }: ProductCardType) => {
   console.log(imgArray);
