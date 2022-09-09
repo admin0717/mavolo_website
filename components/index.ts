@@ -7,3 +7,4 @@ export { default as OurLocation } from "./OurLocation";
 export { default as Services } from "./Services";
 export { default as TimelineComponent } from "./TimelineComponent";
 export { default as TitleComponent } from "./TitleComponent";
+export { default as ProductImageCarousel } from "./ProductImageCarousel";
