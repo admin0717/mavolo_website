@@ -64,7 +64,7 @@ const Products: NextPage = () => {
               </li>
             </ul>
           </ProductCard>
-          <ProductCard title="18W (QCPD)" img={Product1aImage}>
+          <ProductCard title="18W (QCPD)">
             <ul className="space-y-2 list-disc list-outside pl-4">
               <li className="">Dual port USB charger socket</li>
               <li>Compliant with QC 2.3, QC 4+ and PD 3.0</li>
