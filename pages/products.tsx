@@ -29,8 +29,6 @@ export const ProductCard: FC<ProductCardType> = ({
   title,
   children,
 }: ProductCardType) => {
-  console.log(imgArray);
-
   return (
     <div className="flex flex-col md:flex-row space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
       <div className="p-2 bg-[#F3F4FD] drop-shadow-lg lg:w-3/5">
