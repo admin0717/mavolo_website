@@ -219,7 +219,7 @@ const Products: NextPage = () => {
             className="mx-12 lg:mx-24 mt-8 font-Inter font-bold text-3xl lg:text-3xl  md:mt-8 capitalize leading-10 tracking-wide  text-start border-b-2 pb-2 border-[#000]"
             // data-aos="fade-up"
           >
-            Future Products
+            USP
           </h1>
           <ul className="space-y-2 list-disc list-outside pl-4 mx-12 lg:mx-24">
             <li className="">

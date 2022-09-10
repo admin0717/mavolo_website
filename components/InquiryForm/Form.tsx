@@ -29,10 +29,10 @@ const Form: FC = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col items-start justify-center space-y-6 "
+      className="flex flex-col items-start justify-center space-y-6  "
       // data-aos="fade-up"
     >
-      <div className="flex items-center justify-center lg:space-x-6 space-y-6 flex-col lg:flex-row">
+      <div className="flex items-center justify-center lg:space-x-6 lg:space-y-0 space-x-0 space-y-6 flex-col lg:flex-row">
         <div className="flex flex-col justify-center items-start space-y-3">
           <label htmlFor="Name" className="">
             Your Name<span className="text-[#FF0000] text-xl">*</span>
@@ -59,7 +59,7 @@ const Form: FC = () => {
           />
         </div>
       </div>
-      <div className="flex items-center justify-center lg:space-x-6 space-y-6 flex-col lg:flex-row">
+      <div className="flex items-center justify-center lg:space-x-6 lg:space-y-0 space-x-0 space-y-6 flex-col lg:flex-row">
         <div className="flex flex-col justify-center items-start space-y-3">
           <label htmlFor="Mobile Phone">
             Contact number<span className="text-[#FF0000] text-xl">*</span>

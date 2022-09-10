@@ -35,7 +35,11 @@ const Home: NextPage = () => {
         <Footer />
       </div>
       <div className="z-80">
-        <FloatingWhatsApp phoneNumber={""} accountName={""} />
+        <FloatingWhatsApp
+          phoneNumber={"+916355041150"}
+          accountName={"Mavolo"}
+          avatar="/images/WhatsappIcon.jpeg"
+        />
       </div>
     </>
   );
