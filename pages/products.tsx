@@ -79,7 +79,13 @@ export const ProductCard3: FC<ProductCardType> = ({
   return (
     <div className="flex flex-col  space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
       <div className="p-2 bg-[#F3F4FD] drop-shadow-lg ">
-        <Image src={Product3aImage} alt="Image1" width="400" height="350" />
+        <Image
+          src={Product3aImage}
+          alt="Image1"
+          width="400"
+          height="350"
+          layout="responsive"
+        />
         {/* <ProductImageCarousel imgArray={["Product2a.png", "Product2b.png"]} /> */}
       </div>
       <div className="p-4 space-y-4 ">
@@ -99,7 +105,13 @@ export const ProductCard4: FC<ProductCardType> = ({
   return (
     <div className="flex flex-col space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
       <div className="p-2 bg-[#F3F4FD] drop-shadow-lg ">
-        <Image src={Product4aImage} alt="Image1" width="400" height="350" />
+        <Image
+          src={Product4aImage}
+          alt="Image1"
+          width="400"
+          height="350"
+          layout="responsive"
+        />
         {/* <ProductImageCarousel imgArray={["Product2a.png", "Product2b.png"]} /> */}
       </div>
       <div className="p-4 space-y-4">
