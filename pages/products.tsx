@@ -238,7 +238,11 @@ const Products: NextPage = () => {
           </ul>
         </div>
       </div>
-      <FloatingWhatsApp phoneNumber={""} accountName={""} />
+      <FloatingWhatsApp
+        phoneNumber={"+916355041150"}
+        accountName={"Mavolo"}
+        avatar="/images/WhatsappIcon.jpeg"
+      />
     </>
   );
 };
