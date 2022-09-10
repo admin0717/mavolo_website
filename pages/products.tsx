@@ -50,9 +50,18 @@ export const ProductCard: FC<ProductCardType> = ({
 const Products: NextPage = () => {
   return (
     <>
-      <div className="container w-full scroll-smooth mx-auto">
+      {/* bg-[url('/images/Products/Product1c.jpeg')] bg-contain bg-no-repeat */}
+      {/* bg-gradient-to-r from-[#59bf98] to-[#c8eadd] */}
+
+      <div className="container w-full scroll-smooth mx-auto bg-gradient-to-r from-blurBG to-buttonBG space-y-12">
         <Navbar />
-        <TitleComponent title="Our Products" />
+        {/* <TitleComponent title="Our Products" /> */}
+        <h1
+          className="mx-12 lg:mx-24 mt-8 font-Inter font-bold text-3xl lg:text-3xl  md:mt-8 capitalize leading-10 tracking-wide  text-start border-b-2 pb-2 border-[#000]"
+          // data-aos="fade-up"
+        >
+          Our Products in Market
+        </h1>
         <div className="mx-12 lg:mx-24 grid lg:grid-cols-2 gap-8 md:grid-cols-1 grid-cols-1">
           <ProductCard title="10W and 12W">
             <ul className="space-y-2 list-disc list-outside pl-4">
@@ -72,7 +81,13 @@ const Products: NextPage = () => {
             </ul>
           </ProductCard>
         </div>
-        <TitleComponent title="Future Products" />
+        {/* <TitleComponent title="Future Products" /> */}
+        <h1
+          className="mx-12 lg:mx-24 mt-8 font-Inter font-bold text-3xl lg:text-3xl  md:mt-8 capitalize leading-10 tracking-wide  text-start border-b-2 pb-2 border-[#000]"
+          // data-aos="fade-up"
+        >
+          Future Products
+        </h1>
         {/* <div className="mx-12 lg:mx-24 space-y-4">
           <div className="grid grid-cols-3 gap-8">
             <Image src={Product1bImage} alt="Product 3" />
