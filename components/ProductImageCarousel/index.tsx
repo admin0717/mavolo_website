@@ -35,11 +35,11 @@ const ProductImageCarousel: FC<PropTypes> = ({ imgArray }: PropTypes) => {
           <div className="panel" key={index}>
             {" "}
             <Image
-              src={`/images/Products/${imgStr}.jpeg`}
+              src={`/images/Products/${imgStr}`}
               alt="HeroImage"
               width={400}
               height={350}
-              layout="fixed"
+              // layout="fill"
             />{" "}
           </div>
         ))}
