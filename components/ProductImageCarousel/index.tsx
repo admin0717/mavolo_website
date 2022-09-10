@@ -37,8 +37,8 @@ const ProductImageCarousel: FC<PropTypes> = ({ imgArray }: PropTypes) => {
             <Image
               src={`/images/Products/${imgStr}`}
               alt="imgStr"
-              width={600}
-              height={550}
+              width={400}
+              height={350}
               layout="intrinsic"
             />{" "}
           </div>

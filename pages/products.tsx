@@ -31,16 +31,22 @@ export const ProductCard: FC<ProductCardType> = ({
 }: ProductCardType) => {
   return (
     <div className="flex flex-col  space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
-      <div className="p-2 bg-[#F3F4FD] drop-shadow-lg ">
-        {/* <Image src={img} alt="Image1" width="400" height="350" /> */}
-        <ProductImageCarousel
+      <div className="p-2 bg-[#F3F4FD] drop-shadow-lg">
+        <Image
+          src={Product1bImage}
+          alt="Image1"
+          width="300"
+          height="250"
+          layout="responsive"
+        />
+        {/* <ProductImageCarousel
           imgArray={[
             "Product1a.jpeg",
             "Product1b.jpeg",
             "Product1c.jpeg",
             "Product1d.jpeg",
           ]}
-        />
+        /> */}
       </div>
       <div className="p-4 space-y-4 ">
         <div className="font-Inter text-3xl tracking-wide leading-7 font-semibold text-start flex-start bg-button">
@@ -59,8 +65,14 @@ export const ProductCard2: FC<ProductCardType> = ({
   return (
     <div className="flex flex-col  space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
       <div className="p-2 bg-[#F3F4FD] drop-shadow-lg ">
-        {/* <Image src={img} alt="Image1" width="400" height="350" /> */}
-        <ProductImageCarousel imgArray={["Product2a.png", "Product2b.png"]} />
+        <Image
+          src={Product2cImage}
+          alt="Image1"
+          width="300"
+          height="250"
+          layout="responsive"
+        />
+        {/* <ProductImageCarousel imgArray={["Product2a.png", "Product2b.png"]} /> */}
       </div>
       <div className="p-4 space-y-4 ">
         <div className="font-Inter text-3xl tracking-wide leading-7 font-semibold text-start flex-start bg-button">
@@ -80,10 +92,10 @@ export const ProductCard3: FC<ProductCardType> = ({
     <div className="flex flex-col  space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
       <div className="p-2 bg-[#F3F4FD] drop-shadow-lg ">
         <Image
-          src={Product3aImage}
+          src={Product4aImage}
           alt="Image1"
-          width="400"
-          height="350"
+          width="250"
+          height="150"
           layout="responsive"
         />
         {/* <ProductImageCarousel imgArray={["Product2a.png", "Product2b.png"]} /> */}
@@ -106,10 +118,10 @@ export const ProductCard4: FC<ProductCardType> = ({
     <div className="flex flex-col space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
       <div className="p-2 bg-[#F3F4FD] drop-shadow-lg ">
         <Image
-          src={Product4aImage}
+          src={Product3aImage}
           alt="Image1"
-          width="400"
-          height="350"
+          width="250"
+          height="150"
           layout="responsive"
         />
         {/* <ProductImageCarousel imgArray={["Product2a.png", "Product2b.png"]} /> */}
