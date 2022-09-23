@@ -4,6 +4,7 @@ import {
   ProductImageCarousel,
   TitleComponent,
 } from "@components";
+
 import {
   Product1aImage,
   Product1bImage,
