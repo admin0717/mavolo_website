@@ -3,17 +3,24 @@ import { ComingSoonImage } from "@images";
 import type { NextPage } from "next";
 import Image from "next/image";
 import type { FC } from "react";
+import FloatingWhatsApp from "react-floating-whatsapp";
 
 const Blogs: NextPage = () => {
   return (
     <>
-      <Navbar />
+      <div className="container w-full scroll-smooth mx-auto">
+        <Navbar />
+        <div className="flex justify-center items-center container my-auto">
+          <Image src={ComingSoonImage} alt="Coming Soon" />
+        </div>
 
-      <div className="flex flex-col justify-center items-center container my-auto">
-        <Image src={ComingSoonImage} alt="Coming Soon" />
+        <Footer />
       </div>
-
-      <Footer />
+      <FloatingWhatsApp
+        phoneNumber={"+916355041150"}
+        accountName={"Mavolo"}
+        avatar="/images/WhatsappIcon.jpeg"
+      />
     </>
   );
 };
