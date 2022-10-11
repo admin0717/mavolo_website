@@ -21,3 +21,4 @@ export { default as Product2bImage } from "./Products/Product2b.png";
 export { default as Product2cImage } from "./Products/Product2c.jpeg";
 export { default as Product3aImage } from "./Products/Product3a.png";
 export { default as Product4aImage } from "./Products/Product4a.png";
+export { default as ComingSoonImage } from "./ComingSoon.png";
