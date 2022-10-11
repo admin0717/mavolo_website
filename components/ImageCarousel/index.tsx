@@ -4,7 +4,7 @@ import "@egjs/react-flicking/dist/flicking.css";
 import { HeroImage1, HeroImage2, HeroImage3, HeroImage4 } from "@images";
 import Image from "next/image";
 import type { FC } from "react";
-import React, { useRef, useState } from "react";
+import React from "react";
 
 const ImageCarousel: FC = () => {
   const plugins = [

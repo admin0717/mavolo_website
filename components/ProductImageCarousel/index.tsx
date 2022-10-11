@@ -1,15 +1,9 @@
 import { AutoPlay } from "@egjs/flicking-plugins";
 import Flicking from "@egjs/react-flicking";
 import "@egjs/react-flicking/dist/flicking.css";
-import {
-  Product1aImage,
-  Product1bImage,
-  Product1cImage,
-  Product1dImage,
-} from "@images";
 import Image, { StaticImageData } from "next/image";
 import type { FC } from "react";
-import React, { useRef, useState } from "react";
+import React from "react";
 
 export interface PropTypes {
   imgArray: String[];
@@ -18,7 +12,6 @@ export interface PropTypes {
 const ProductImageCarousel: FC<PropTypes> = ({ imgArray }: PropTypes) => {
   const plugins = [
     new AutoPlay({ duration: 3000, direction: "NEXT", stopOnHover: false }),
-    // new Perspective({ rotate: 0.9 }),
   ];
 
   return (
@@ -43,37 +36,6 @@ const ProductImageCarousel: FC<PropTypes> = ({ imgArray }: PropTypes) => {
             />{" "}
           </div>
         ))}
-
-        {/* <div className="panel">
-          {" "}
-          <Image
-            src={Product1bImage}
-            alt="HeroImage"
-            width={400}
-            height={350}
-            layout="fixed"
-          />{" "}
-        </div>
-        <div className="panel">
-          {" "}
-          <Image
-            src={Product1cImage}
-            alt="HeroImage"
-            width={400}
-            height={350}
-            layout="fixed"
-          />{" "}
-        </div>
-        <div className="panel">
-          {" "}
-          <Image
-            src={Product1dImage}
-            alt="HeroImage"
-            width={400}
-            height={350}
-            layout="fixed"
-          />{" "}
-        </div> */}
       </Flicking>
     </>
   );

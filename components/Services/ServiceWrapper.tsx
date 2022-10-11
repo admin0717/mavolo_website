@@ -23,10 +23,7 @@ const ServiceWrapper: FC<PropTypes> = ({
 }: PropTypes) => {
   return (
     <>
-      <div
-        className="flex lg:flex-col justify-center space-y-2 text-start hover:backdrop-blur-lg flex-row space-x-4"
-        // data-aos="fade-up"
-      >
+      <div className="flex lg:flex-col justify-center space-y-2 text-start hover:backdrop-blur-lg flex-row space-x-4">
         <Image
           src={img}
           alt={title}

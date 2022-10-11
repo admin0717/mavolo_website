@@ -1,10 +1,6 @@
-// import sendgrid from "@sendgrid/mail";
 import nodemailer from "nodemailer";
 
-// sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
-
 async function sendEmail(req, res) {
-  console.log(req.body);
   try {
     console.log("email sending started");
     const transporter = nodemailer.createTransport({
@@ -16,9 +12,9 @@ async function sendEmail(req, res) {
         pass: process.env.SMTP_PASSWORD,
       },
     });
+
     await transporter.sendMail({
-      // to: "support@mavolo.in", // Your email where you'll receive emails
-      to: "barundebnath91@gmail.com", // Your email where you'll receive emails
+      to: "support@mavolo.in", // Your email where you'll receive emails
       from: "barundebnath91@gmail.com", // your website email address here
       subject: `Mavolo Website Query: ${req.body.fullname} : ${req.body.phone}`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -55,13 +51,9 @@ async function sendEmail(req, res) {
       </body>
       </html>`,
     });
-    console.log("email sent");
   } catch (error) {
-    // console.log(error);
     return res.status(error.statusCode || 500).json({ error: error.message });
   }
-
-  console.log("email sending done");
 
   return res.status(200).json({ error: "" });
 }

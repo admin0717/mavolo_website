@@ -2,7 +2,6 @@ import { Footer, Navbar } from "@components";
 import { ComingSoonImage } from "@images";
 import type { NextPage } from "next";
 import Image from "next/image";
-import type { FC } from "react";
 import FloatingWhatsApp from "react-floating-whatsapp";
 
 const Blogs: NextPage = () => {

@@ -9,20 +9,10 @@ import {
 import { useEffect, useState } from "react";
 import FloatingWhatsApp from "react-floating-whatsapp";
 
-import { OurLocationImage } from "@images";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
 
 const Home: NextPage = () => {
   const [isToggle, setIsToggle] = useState(false);
-
-  // useEffect(() => {
-  //   // AOS.init({ startEvent: "load" });
-  //   // AOS.refreshHard();
-  // }, []);
 
   return (
     <>

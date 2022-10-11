@@ -1,17 +1,7 @@
-import {
-  Footer,
-  Navbar,
-  ProductImageCarousel,
-  TitleComponent,
-} from "@components";
+import { Navbar } from "@components";
 
 import {
-  Product1aImage,
   Product1bImage,
-  Product1cImage,
-  Product1dImage,
-  Product2aImage,
-  Product2bImage,
   Product2cImage,
   Product3aImage,
   Product4aImage,
@@ -40,14 +30,6 @@ export const ProductCard: FC<ProductCardType> = ({
           height="150"
           layout="responsive"
         />
-        {/* <ProductImageCarousel
-          imgArray={[
-            "Product1a.jpeg",
-            "Product1b.jpeg",
-            "Product1c.jpeg",
-            "Product1d.jpeg",
-          ]}
-        /> */}
       </div>
       <div className="p-4 space-y-4 ">
         <div className="font-Inter text-3xl tracking-wide leading-7 font-semibold text-start flex-start bg-button">
@@ -73,7 +55,6 @@ export const ProductCard2: FC<ProductCardType> = ({
           height="150"
           layout="responsive"
         />
-        {/* <ProductImageCarousel imgArray={["Product2a.png", "Product2b.png"]} /> */}
       </div>
       <div className="p-4 space-y-4 ">
         <div className="font-Inter text-3xl tracking-wide leading-7 font-semibold text-start flex-start bg-button">
@@ -99,7 +80,6 @@ export const ProductCard3: FC<ProductCardType> = ({
           height="150"
           layout="responsive"
         />
-        {/* <ProductImageCarousel imgArray={["Product2a.png", "Product2b.png"]} /> */}
       </div>
       <div className="p-4 space-y-4 ">
         <div className="font-Inter text-3xl tracking-wide leading-7 font-semibold text-start flex-start bg-button">
@@ -125,7 +105,6 @@ export const ProductCard4: FC<ProductCardType> = ({
           height="150"
           layout="responsive"
         />
-        {/* <ProductImageCarousel imgArray={["Product2a.png", "Product2b.png"]} /> */}
       </div>
       <div className="p-4 space-y-4">
         <div className="font-Inter text-3xl tracking-wide leading-7 font-semibold text-start flex-start bg-button">
@@ -146,11 +125,7 @@ const Products: NextPage = () => {
       <div className="container w-full scroll-smooth mx-auto bg-gradient-to-r from-blurBG to-buttonBG pb-16">
         <Navbar />
         <div className="space-y-12">
-          {/* <TitleComponent title="Our Products" /> */}
-          <h1
-            className="mx-12 lg:mx-24 mt-8 font-Inter font-bold text-3xl lg:text-3xl  md:mt-8 capitalize leading-10 tracking-wide  text-start border-b-2 pb-2 border-[#000]"
-            // data-aos="fade-up"
-          >
+          <h1 className="mx-12 lg:mx-24 mt-8 font-Inter font-bold text-3xl lg:text-3xl  md:mt-8 capitalize leading-10 tracking-wide  text-start border-b-2 pb-2 border-[#000]">
             Our Products in Market
           </h1>
           <div className="mx-12 lg:mx-24 grid lg:grid-cols-2 gap-8 md:grid-cols-1 grid-cols-1">
@@ -172,35 +147,10 @@ const Products: NextPage = () => {
               </ul>
             </ProductCard2>
           </div>
-          {/* <TitleComponent title="Future Products" /> */}
-          <h1
-            className="mx-12 lg:mx-24 mt-8 font-Inter font-bold text-3xl lg:text-3xl  md:mt-8 capitalize leading-10 tracking-wide  text-start border-b-2 pb-2 border-[#000]"
-            // data-aos="fade-up"
-          >
+          <h1 className="mx-12 lg:mx-24 mt-8 font-Inter font-bold text-3xl lg:text-3xl  md:mt-8 capitalize leading-10 tracking-wide  text-start border-b-2 pb-2 border-[#000]">
             Future Products
           </h1>
-          {/* <div className="mx-12 lg:mx-24 space-y-4">
-          <div className="grid grid-cols-3 gap-8">
-            <Image src={Product1bImage} alt="Product 3" />
-            <Image src={Product2bImage} alt="Product 3" />
-            <Image src={Product3aImage} alt="Product 3" />
-          </div>
-          <div className="font-Inter text-3xl font-semibold ">E1</div>
-          <ul className="space-y-2 list-disc list-outside pl-4">
-            <li>
-              100W power unit compatible with all user gadgets (Mobile Phones,
-              Laptops, Tablets etc)
-            </li>
-            <li>Compliant with PPS, PD 3.0 and QC4</li>
-            <li>Physical form factor : Table/Wall mount + Adaptor</li>
-            <li>Physical form factor : Table/Wall mount + Adaptor</li>
-            <li>Wifi and Bluetooth Connectivity enabled</li>
-            <li>
-              Easy, Fast, Integrated, Portable, Small form factor, ONE stop
-              solution for all your Gadget Charging need.
-            </li>
-          </ul>
-        </div> */}
+
           <div className="mx-12 lg:mx-24 grid lg:grid-cols-2 gap-8 md:grid-cols-1 grid-cols-1">
             <ProductCard3 title="E1">
               <ul className="space-y-2 list-disc list-outside pl-4">
@@ -228,10 +178,7 @@ const Products: NextPage = () => {
               </ul>
             </ProductCard4>
           </div>
-          <h1
-            className="mx-12 lg:mx-24 mt-8 font-Inter font-bold text-3xl lg:text-3xl  md:mt-8 capitalize leading-10 tracking-wide  text-start border-b-2 pb-2 border-[#000]"
-            // data-aos="fade-up"
-          >
+          <h1 className="mx-12 lg:mx-24 mt-8 font-Inter font-bold text-3xl lg:text-3xl  md:mt-8 capitalize leading-10 tracking-wide  text-start border-b-2 pb-2 border-[#000]">
             USP
           </h1>
           <ul className="space-y-2 list-disc list-outside pl-4 mx-12 lg:mx-24">
