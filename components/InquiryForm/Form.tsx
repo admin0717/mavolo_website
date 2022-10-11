@@ -1,7 +1,9 @@
 import type { FC } from "react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import toast, { Toaster } from "react-hot-toast";
 import PhoneInput from "react-phone-number-input";
+
 // import "react-phone-number-input/style.css";
 
 const Form: FC = () => {
@@ -45,10 +47,21 @@ const Form: FC = () => {
 
     const { error } = await res.json();
     if (error) {
-      console.log(error);
+      const notifyError = () =>
+        toast.error("Oops! Something went wrong. Please try again!", {
+          duration: 4000,
+          position: "top-center",
+        });
+      notifyError();
       return;
     }
-    console.log(fullName, email, phone, query, topic);
+
+    const notifySuccess = () =>
+      toast.success("Your form has been successfully received!", {
+        duration: 4000,
+        position: "top-center",
+      });
+    notifySuccess();
   };
 
   {
@@ -170,6 +183,16 @@ const Form: FC = () => {
         className="font-Inter font-normal text-xl md:text-lg   cursor-pointer p-2 rounded-md hover:border-2 hover:bg-primaryBG drop-shadow-md hover:text-buttonBG bg-buttonBG text-buttonText px-4">
         Submit
       </button>
+      <Toaster
+        toastOptions={{
+          className: "",
+          style: {
+            border: "1px solid #54BD95",
+            padding: "16px",
+            color: "#713200",
+          },
+        }}
+      />
     </form>
   );
 };
