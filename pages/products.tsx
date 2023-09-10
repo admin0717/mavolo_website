@@ -5,6 +5,8 @@ import {
   Product2cImage,
   Product3aImage,
   Product4aImage,
+  Product1cImage,
+
 } from "@images";
 import type { NextPage } from "next";
 import Image, { StaticImageData } from "next/image";
@@ -49,7 +51,7 @@ export const ProductCard2: FC<ProductCardType> = ({
     <div className="flex flex-col  space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
       <div className="p-2 bg-[#F3F4FD] drop-shadow-lg m-8">
         <Image
-          src={Product2cImage}
+          src={Product1cImage}
           alt="Image1"
           width="200"
           height="150"
@@ -74,7 +76,7 @@ export const ProductCard3: FC<ProductCardType> = ({
     <div className="flex flex-col  space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
       <div className="p-2 bg-[#F3F4FD] drop-shadow-lg m-8">
         <Image
-          src={Product4aImage}
+          src={Product3aImage}
           alt="Image1"
           width="250"
           height="150"
@@ -99,10 +101,10 @@ export const ProductCard4: FC<ProductCardType> = ({
     <div className="flex flex-col space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
       <div className="p-2 bg-[#F3F4FD] drop-shadow-lg m-8">
         <Image
-          src={Product3aImage}
+          src={Product4aImage}
           alt="Image1"
-          width="250"
-          height="150"
+          width="200"
+          height="120"
           layout="responsive"
         />
       </div>
@@ -131,6 +133,25 @@ const Products: NextPage = () => {
           <div className="mx-12 lg:mx-24 grid lg:grid-cols-2 gap-8 md:grid-cols-1 grid-cols-1">
             <ProductCard title="10W and 12W">
               <ul className="space-y-2 list-disc list-outside pl-4">
+                <li className="">Brand Anchor Single port USB charger socket</li>
+                <li>  Connectivity Technology	USB</li>
+                <li>Connector Type	USB</li>
+                <li>Compatible Devices	PC</li>
+                <li>Compatible Phone Models	Usb</li>
+                <li> Included Components	1 Piece Roma Modular 1M USB Charger 1000 mA 5V Dc</li>
+                <li>Special Feature	Fast Charging</li>
+                <li> Colour	White</li >
+                <li> Input Voltage	220 Volts</li >
+                <li>Mounting Type	Box</li >
+                <li>Compliant with QC 2.0 and QC 3.0</li>
+                <li>
+                  Avaialable in 30+ varieties (Roma, Penta Modular, GM, Orient
+                  etc)
+                </li>
+              </ul>
+            </ProductCard>
+            <ProductCard title="10W and 12W">
+              <ul className="space-y-2 list-disc list-outside pl-4">
                 <li className="">Single port USB charger socket</li>
                 <li>Compliant with QC 2.0 and QC 3.0</li>
                 <li>
@@ -139,6 +160,106 @@ const Products: NextPage = () => {
                 </li>
               </ul>
             </ProductCard>
+            <ProductCard title="10W and 12W">
+              <ul className="space-y-2 list-disc list-outside pl-4">
+                <li className="">Single port USB charger socket</li>
+                <li>Compliant with QC 2.0 and QC 3.0</li>
+                <li>
+                  Avaialable in 30+ varieties (Roma, Penta Modular, GM, Orient
+                  etc)
+                </li>
+              </ul>
+            </ProductCard>
+            <ProductCard title="10W and 12W">
+              <ul className="space-y-2 list-disc list-outside pl-4">
+                <li className="">Single port USB charger socket</li>
+                <li>Compliant with QC 2.0 and QC 3.0</li>
+                <li>
+                  Avaialable in 30+ varieties (Roma, Penta Modular, GM, Orient
+                  etc)
+                </li>
+              </ul>
+            </ProductCard>
+            <ProductCard title="10W and 12W">
+              <ul className="space-y-2 list-disc list-outside pl-4">
+                <li className="">Single port USB charger socket</li>
+                <li>Compliant with QC 2.0 and QC 3.0</li>
+                <li>
+                  Avaialable in 30+ varieties (Roma, Penta Modular, GM, Orient
+                  etc)
+                </li>
+              </ul>
+            </ProductCard>
+            <ProductCard2 title="18W (QCPD)">
+              <ul className="space-y-2 list-disc list-outside pl-4">
+                <li className="">Dual port USB charger socket</li>
+                <li>Compliant with QC 2.3, QC 4+ and PD 3.0</li>
+                <li>Available in single module Roma</li>
+              </ul>
+            </ProductCard2>
+            <ProductCard2 title="18W (QCPD)">
+              <ul className="space-y-2 list-disc list-outside pl-4">
+                <li className="">Dual port USB charger socket</li>
+                <li>Compliant with QC 2.3, QC 4+ and PD 3.0</li>
+                <li>Available in single module Roma</li>
+              </ul>
+            </ProductCard2>
+            <ProductCard2 title="18W (QCPD)">
+              <ul className="space-y-2 list-disc list-outside pl-4">
+                <li className="">Dual port USB charger socket</li>
+                <li>Compliant with QC 2.3, QC 4+ and PD 3.0</li>
+                <li>Available in single module Roma</li>
+              </ul>
+            </ProductCard2>
+            <ProductCard2 title="18W (QCPD)">
+              <ul className="space-y-2 list-disc list-outside pl-4">
+                <li className="">Dual port USB charger socket</li>
+                <li>Compliant with QC 2.3, QC 4+ and PD 3.0</li>
+                <li>Available in single module Roma</li>
+              </ul>
+            </ProductCard2>
+            <ProductCard2 title="18W (QCPD)">
+              <ul className="space-y-2 list-disc list-outside pl-4">
+                <li className="">Dual port USB charger socket</li>
+                <li>Compliant with QC 2.3, QC 4+ and PD 3.0</li>
+                <li>Available in single module Roma</li>
+              </ul>
+            </ProductCard2>
+            <ProductCard2 title="18W (QCPD)">
+              <ul className="space-y-2 list-disc list-outside pl-4">
+                <li className="">Dual port USB charger socket</li>
+                <li>Compliant with QC 2.3, QC 4+ and PD 3.0</li>
+                <li>Available in single module Roma</li>
+              </ul>
+            </ProductCard2>
+            <ProductCard2 title="18W (QCPD)">
+              <ul className="space-y-2 list-disc list-outside pl-4">
+                <li className="">Dual port USB charger socket</li>
+                <li>Compliant with QC 2.3, QC 4+ and PD 3.0</li>
+                <li>Available in single module Roma</li>
+              </ul>
+            </ProductCard2>
+            <ProductCard2 title="18W (QCPD)">
+              <ul className="space-y-2 list-disc list-outside pl-4">
+                <li className="">Dual port USB charger socket</li>
+                <li>Compliant with QC 2.3, QC 4+ and PD 3.0</li>
+                <li>Available in single module Roma</li>
+              </ul>
+            </ProductCard2>
+            <ProductCard2 title="18W (QCPD)">
+              <ul className="space-y-2 list-disc list-outside pl-4">
+                <li className="">Dual port USB charger socket</li>
+                <li>Compliant with QC 2.3, QC 4+ and PD 3.0</li>
+                <li>Available in single module Roma</li>
+              </ul>
+            </ProductCard2>
+            <ProductCard2 title="18W (QCPD)">
+              <ul className="space-y-2 list-disc list-outside pl-4">
+                <li className="">Dual port USB charger socket</li>
+                <li>Compliant with QC 2.3, QC 4+ and PD 3.0</li>
+                <li>Available in single module Roma</li>
+              </ul>
+            </ProductCard2>
             <ProductCard2 title="18W (QCPD)">
               <ul className="space-y-2 list-disc list-outside pl-4">
                 <li className="">Dual port USB charger socket</li>
