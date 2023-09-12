@@ -8,7 +8,6 @@ import {
 } from "@components";
 import { useEffect, useState } from "react";
 import FloatingWhatsApp from "react-floating-whatsapp";
-
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {

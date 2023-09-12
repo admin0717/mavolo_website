@@ -8,8 +8,8 @@ import { HiMenu, HiX } from "react-icons/hi";
 const Navbar: FC = () => {
   const [isToggle, setIsToggle] = useState(true);
 
-  const LinksText = ["Products", "Blogs", "About Us", "Contact Us"];
-  const Links = ["/products", "/blogs", "/about-us", "/#contact-us"];
+  const LinksText = ["About Us", "Products", "Blogs",  "Contact Us"];
+  const Links = ["/about-us", "/products", "/blogs",  "/#contact-us"];
   return (
     <>
       {/* Medium to large Screens */}

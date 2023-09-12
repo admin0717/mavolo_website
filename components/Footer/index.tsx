@@ -48,15 +48,15 @@ const Footer: FC = () => {
             <div className="text-lg font-Inter font-semibold">
               Registered Address
             </div>
-            <div>
-              B-51, <br />
-              Second floor, Sector 57,
+            <div>   
+              Block - C -168, <br />
+              Second floor, sector 10,
               <br />
-              Noida,
-              <br />
+              Noida Gautam Buddha Nagar ,  <br />            
               India - 201301
             </div>
-            <div>+91 1204320122</div>
+            <div>Mob- +91 9787093848, <br />
+               tel- 1204320122</div>
           </div>
           <div className="lg:w-1/3 flex items-start justify-center lg:space-x-12 space-x-4 lg:mr-10">
             {/* <div className="lg:w-1/2 flex flex-col items-start justify-center">

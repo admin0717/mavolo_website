@@ -12,7 +12,6 @@ const Blogs: NextPage = () => {
         <div className="flex justify-center items-center container my-auto">
           <Image src={ComingSoonImage} alt="Coming Soon" />
         </div>
-
         <Footer />
       </div>
       <FloatingWhatsApp
