@@ -2,6 +2,7 @@ import { Navbar } from "@components";
 
 import {
   Product1bImage,
+
   Product1dImage,
   Product2cImage,
   Product2aImage,
@@ -39,6 +40,7 @@ export const ProductCard: FC<ProductCardType> = ({
           height="150"
           layout="responsive"
         />
+
       </div>
       <div className="p-4 space-y-4 ">
         <div className="font-Inter text-3xl tracking-wide leading-7 font-semibold text-start flex-start bg-button">
@@ -49,6 +51,7 @@ export const ProductCard: FC<ProductCardType> = ({
     </div>
   );
 };
+
 
 export const ProductCard2: FC<ProductCardType> = ({
   title,
@@ -220,6 +223,7 @@ export const ProductCard4: FC<ProductCardType> = ({
   );
 };
 
+
 const Products: NextPage = () => {
   return (
     <>
@@ -361,6 +365,7 @@ const Products: NextPage = () => {
                 <li>Cable rolls back with the release of lock.</li>
               </ul>
             </ProductCard4>
+
           </div>
           <h1 className="mx-12 lg:mx-24 mt-8 font-Inter font-bold text-3xl lg:text-3xl  md:mt-8 capitalize leading-10 tracking-wide  text-start border-b-2 pb-2 border-[#000]">
             USP
@@ -381,6 +386,8 @@ const Products: NextPage = () => {
             <li>Connectivity : Keep your devices connected and alive.</li>
           </ul>
         </div>
+
+
       </div>
       <FloatingWhatsApp
         phoneNumber={"+916355041150"}

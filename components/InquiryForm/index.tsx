@@ -22,6 +22,8 @@ const InquiryForm: FC = () => {
             </h1>
           </div>
           <Form />
+          <div className="mx-12 flex flex-col justify-center items-center lg:space-x-20 lg:flex-row my-24">
+          </div>
         </div>
       </div>
     </div>

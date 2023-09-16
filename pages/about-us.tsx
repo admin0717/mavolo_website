@@ -9,6 +9,7 @@ const AboutUs: NextPage = () => {
         <Navbar />
         <TitleComponent title="About Us" />
         <div className=" lg:mx-24  text-start font-bold  text-3xl border-b-2 mx-10 capitalize">
+
           Our Story
         </div>
         <TimelineComponent />
@@ -79,21 +80,27 @@ const AboutUs: NextPage = () => {
           </p>
         </div>
         <div className=" lg:mx-24  text-start font-bold  text-3xl border-b-2 mx-10 capitalize">
-          Our Vision
+          Our Vision and Mission Statement
         </div>
         <div className="lg:mx-24 mx-12 my-8 flex flex-col items-start justify-center space-y-4 font-Inter font-normal tracking-wide leading-6 text-start">
-          <p>
-            For today&#39;s world, charging and access to the internet are
-            fundamental needs. We cannot imagine our day without powering our
-            devices and accessing the internet. We see a future where these
-            services will be pre-installed in our homes. We need not to carry
-            and maintain different charges for our devices. The effort to make
-            it real is that the European Union has restricted all gadget
-            manufacturers to use Type C ports. These policies will push for a
-            universal gadget charging solution, where one charger is enough for
-            all your devices.
+          <p> Introducing an integrated lifestyle... <br />
+
+            Where the fundamentals are seamlessly integrated and the flawless easy interaction can be done.<br />
+            What are fundamental for human need? <br />
+            1) Electricity<br />
+            2) Water Supply <br />
+            3) Fire ( Gas cylinder)
+            Next things <br />
+            5) Charging <br />
+            6) Internet<br />
+
+            We are starting with integrated chargers in your vicinity for that we have visualise human interaction with its surroundings and we noticed that<br />
+            we charge our gadgets around our working desk and bed. So we have designed chargers which can be integrated near our desk and bed side.<br />
+            These chargers are smart and charge your smartphone/ gadgets optimally as per the load need.
           </p>
         </div>
+
+
       </div>
       <FloatingWhatsApp phoneNumber={""} accountName={""} />
     </>
