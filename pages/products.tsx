@@ -12,9 +12,7 @@ import {
   Product1cImage,
   Product1aImage,
   Product5cImage,
-  Product6cImage,
-  Product7Image,
-
+  Product6cImage
 } from "@images";
 import type { NextPage } from "next";
 import Image, { StaticImageData } from "next/image";
