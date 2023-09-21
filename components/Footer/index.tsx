@@ -1,84 +1,104 @@
-import { LogoIcon, LogoPrimary, LogoSecondary } from "@images";
+import { LogoIcon, LogoIconWhite, LogoPrimary, LogoSecondary } from "@images";
 import Image from "next/image";
 import Link from "next/link";
 import type { FC } from "react";
-import { useState } from "react";
-import { HiMenu, HiX } from "react-icons/hi";
+import {
+  FaFacebookSquare,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitterSquare,
+} from "react-icons/fa";
 
-const Navbar: FC = () => {
-  const [isToggle, setIsToggle] = useState(true);
-
-  const LinksText = ["About Us", "Products", "Blogs", "Contact Us"];
-  const Links = ["/about-us", "/products", "/blogs", "/#contact-us"];
+const Footer: FC = () => {
   return (
     <>
-      {/* Medium to large Screens */}
-      <nav className="md:flex md:flex-col md:justify-center md:items-center hidden md:z-20  px-20 md:px-24 sticky top-0 z-50 bg-[#fff] drop-shadow-sm w-full">
-        <div className="flex justify-between items-center w-full xl:space-x-20 md:space-x-1 lg:space-x-8">
-          <Link href="/" className="">
-            <div className="flex  items-center space-x-1 cursor-pointer">
-              <Image src={LogoIcon} alt="logo" width={70} height={70} />
-              <span className="font-Inter  xl:text-4xl md:text-2xl font-bold text-NavText tracking-wide">
-                MAVOLO
-              </span>
-            </div>
-          </Link>
-          <div className="flex items-center justify-between lg:space-x-8 md:space-x-8">
-            {LinksText.map((text, index) => (
-              <Link href={`${Links[index]}`} key={`${text}+${index}`}>
-                <a className="font-Inter font-normal text-base text-LogoText  hover:text-NavTextHover cursor-pointer hover:border-b-2 hover:border-NavTextHover ">
-                  {text}
-                </a>
-              </Link>
-            ))}
+      <footer
+        id="contact-us"
+        className="lg:mx-24  mt-24 space-y-12  bg-buttonBG rounded-t-xl flex flex-col pb-12">
+        <div className=" flex items-center mt-10">
+          <div className="flex  items-center  space-x-1 w-1/2 lg:ml-12">
+            <Image
+              src={LogoIconWhite}
+              alt="logo"
+              width={70}
+              height={70}
+              className=""
+            />
+            <span className="font-Inter  xl:text-4xl md:text-2xl font-bold  tracking-wide text-[#fff]">
+              MAVOLO
+            </span>
+          </div>
+          <div className="flex justify-center items-center space-x-4 w-1/2 lg:ml-80 md:ml-40">
+            <Link href="/">
+              <FaLinkedin className="w-7 h-7 fill-[#fff] hover:fill-primaryBG" />
+            </Link>
+            <Link href="/">
+              <FaFacebookSquare className="w-7 h-7 fill-[#fff] hover:fill-primaryBG" />
+            </Link>
+            <Link href="/">
+              <FaInstagram className="w-7 h-7 fill-[#fff] hover:fill-primaryBG" />
+            </Link>
+            <Link href="/">
+              <FaTwitterSquare className="w-7 h-7 fill-[#fff] hover:fill-primaryBG" />
+            </Link>
           </div>
         </div>
-      </nav>
-
-      {/* Mobile Screens */}
-      <nav
-        className={`flex md:hidden w-full px-2 md:px-24 sticky top-0 z-50 bg-[#fff] drop-shadow-sm   ${!isToggle ? "flex-col h-screen mx-0   scrollbar-hide" : ""
-          }`}>
-        <div className="flex justify-between items-center w-full">
-          <Link href="/" className="">
-            <div className="flex  items-center space-x-1 cursor-pointer">
-              <Image src={LogoIcon} alt="logo" width={60} height={60} />
-              <span className="font-Inter text-3xl font-bold text-NavText tracking-wide">
-                MAVOLO
-              </span>
+        <div className="w-full flex flex-col justify-between items-start lg:flex-row space-y-12 text-[#fff]">
+          <div className="lg:w-2/3 flex flex-col items-start justify-center lg:pl-20 space-y-4 mx-auto lg:mx-auto px-auto lg:px-0">
+            <div className="text-lg font-Inter font-semibold">
+              Registered Address
             </div>
-          </Link>
-
-          {isToggle ? (
-            <HiMenu
-              className="w-8 h-8 xl:w-16 xl:h-16 fill-buttonBG cursor-pointer"
-              onClick={() => setIsToggle(false)}
-            />
-          ) : (
-            <HiX
-              className="w-8 h-8 fill-buttonBG cursor-pointer"
-              onClick={() => setIsToggle(true)}
-            />
-          )}
-        </div>
-        {!isToggle && (
-          <div className="flex flex-col items-start justify-between space-y-10  my-auto sticky scrollbar-hide px-12">
-            {LinksText.map((text, index) => (
-              <Link href={`${Links[index]}`} key={`${text}+${index}`}>
-                <a
-                  className="font-Inter font-normal text-4xl text-LogoText hover:text-NavTextHover cursor-pointer hover:border-b-2 hover:border-NavTextHover"
-                  onClick={() => {
-                    setIsToggle((prev) => !prev);
-                  }}>
-                  {text}{" "}
+            <div>
+              Block - C -168, <br />
+              Second floor, sector 10,
+              <br />
+              Noida Gautam Buddha Nagar ,  <br />
+              India - 201301
+            </div>
+            <div>Mob- +91 9787093848, <br />
+              tel- 0120-4127037</div>
+          </div>
+          <div className="lg:w-1/3 flex items-start justify-center lg:space-x-12 space-x-4 lg:mr-10">
+            {/* <div className="lg:w-1/2 flex flex-col items-start justify-center">
+              <Link href="/">
+                <a className="hover:text-blurBG]">Blog</a>
+              </Link>
+              <Link href="/">Products</Link>
+              <Link href="/">Contact Us</Link>
+            </div> */}
+            <div className="lg:w-1/2 flex lg:flex-col lg:items-end items-start justify-center flex-row space-x-4 mx-4">
+              <Link href="/about-us">
+                <a className="text-lg font-Inter hover:border-b-2">About us</a>
+              </Link>
+              <Link href="/products">
+                <a className="text-lg font-Inter hover:border-b-2">Products</a>
+              </Link>
+              <Link href="/blogs">
+                <a className="text-lg font-Inter hover:border-b-2">Blogs</a>
+              </Link>
+              <Link href="#inquire">
+                <a className="text-lg font-Inter hover:border-b-2">
+                  Write to us
                 </a>
               </Link>
-            ))}
+              <Link href="/career">
+                <a className="text-lg font-Inter hover:border-b-2">Career</a>
+              </Link>
+            </div>
           </div>
-        )}
-      </nav>
+        </div>
+        <div className="text-start text-[#fff] font-white lg:ml-20 mx-10 lg:mx-0">
+          For any queries or concerns, write to us at{" "}
+          <Link href="mailto:info@mavolo.in" className="">
+            <a className="border-b-2  pb-1">info@mavolo.in </a>
+          </Link>
+        </div>
+        <div className="text-center text-[#fff] font-white lg:ml-20 mx-auto lg:mx-0">
+          ©2022 Mavolo. All rights reserved
+        </div>
+      </footer>
     </>
   );
 };
 
-export default Navbar;
+export default Footer;
