@@ -2,7 +2,6 @@ import { Navbar } from "@components";
 
 import {
   Product1bImage,
-
   Product1dImage,
   Product2cImage,
   Product2aImage,
@@ -11,18 +10,19 @@ import {
   Product4aImage,
   Product1cImage,
   Product1aImage,
-  Product5cImage,
-  Product6cImage
+
 } from "@images";
 import type { NextPage } from "next";
 import Image, { StaticImageData } from "next/image";
 import type { FC } from "react";
 import FloatingWhatsApp from "react-floating-whatsapp";
+import Products2 from "./Products2";
 
 export interface ProductCardType {
   title: String;
   children: React.ReactNode;
 }
+
 
 export const ProductCard: FC<ProductCardType> = ({
   title,
@@ -30,9 +30,10 @@ export const ProductCard: FC<ProductCardType> = ({
 }: ProductCardType) => {
   return (
     <div className="flex flex-col  space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
-      <div className="p-2 bg-[#F3F4FD] drop-shadow-lg m-8">
+      <div className="bg-[#F3F4FD] drop-shadow-lg m-8" >
         <Image
           src={Product1bImage}
+
           alt="Image1"
           width="200"
           height="150"
@@ -57,7 +58,7 @@ export const ProductCard2: FC<ProductCardType> = ({
 }: ProductCardType) => {
   return (
     <div className="flex flex-col  space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
-      <div className="p-2 bg-[#F3F4FD] drop-shadow-lg m-8">
+      <div className="bg-[#F3F4FD] drop-shadow-lg m-8">
         <Image
           src={Product1aImage}
           alt="Image1"
@@ -75,54 +76,8 @@ export const ProductCard2: FC<ProductCardType> = ({
     </div>
   );
 };
-export const ProductCard5: FC<ProductCardType> = ({
-  title,
-  children,
-}: ProductCardType) => {
-  return (
-    <div className="flex flex-col  space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
-      <div className="p-2 bg-[#F3F4FD] drop-shadow-lg m-8">
-        <Image
-          src={Product1cImage}
-          alt="Image1"
-          width="200"
-          height="150"
-          layout="responsive"
-        />
-      </div>
-      <div className="p-4 space-y-4 ">
-        <div className="font-Inter text-3xl tracking-wide leading-7 font-semibold text-start flex-start bg-button">
-          {title}
-        </div>
-        <div className="">{children}</div>
-      </div>
-    </div>
-  );
-};
-export const ProductCard8: FC<ProductCardType> = ({
-  title,
-  children,
-}: ProductCardType) => {
-  return (
-    <div className="flex flex-col  space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
-      <div className="p-2 bg-[#F3F4FD] drop-shadow-lg m-8">
-        <Image
-          src={Product2bImage}
-          alt="Image1"
-          width="200"
-          height="150"
-          layout="responsive"
-        />
-      </div>
-      <div className="p-4 space-y-4 ">
-        <div className="font-Inter text-3xl tracking-wide leading-7 font-semibold text-start flex-start bg-button">
-          {title}
-        </div>
-        <div className="">{children}</div>
-      </div>
-    </div>
-  );
-};
+
+
 
 export const ProductCard6: FC<ProductCardType> = ({
   title,
@@ -134,35 +89,12 @@ export const ProductCard6: FC<ProductCardType> = ({
         <Image
           src={Product2bImage}
           alt="Image1"
-          width="200"
-          height="150"
+          width="250"
+          height="190"
           layout="responsive"
         />
       </div>
-      <div className="p-4 space-y-4 ">
-        <div className="font-Inter text-3xl tracking-wide leading-7 font-semibold text-start flex-start bg-button">
-          {title}
-        </div>
-        <div className="">{children}</div>
-      </div>
-    </div>
-  );
-}; export const ProductCard7: FC<ProductCardType> = ({
-  title,
-  children,
-}: ProductCardType) => {
-  return (
-    <div className="flex flex-col  space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
-      <div className="p-2 bg-[#F3F4FD] drop-shadow-lg m-8">
-        <Image
-          src={Product1dImage}
-          alt="Image1"
-          width="200"
-          height="150"
-          layout="responsive"
-        />
-      </div>
-      <div className="p-4 space-y-4 ">
+      <div className="p-2 space-y-2">
         <div className="font-Inter text-3xl tracking-wide leading-7 font-semibold text-start flex-start bg-button">
           {title}
         </div>
@@ -177,16 +109,16 @@ export const ProductCard3: FC<ProductCardType> = ({
 }: ProductCardType) => {
   return (
     <div className="flex flex-col  space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
-      <div className="p-2 bg-[#F3F4FD] drop-shadow-lg m-8">
+      <div className="bg-[#F3F4FD] drop-shadow-lg m-2">
         <Image
           src={Product3aImage}
           alt="Image1"
-          width="250"
-          height="150"
+          width="200"
+          height="120"
           layout="responsive"
         />
       </div>
-      <div className="p-4 space-y-4 ">
+      <div className="p-2 space-y-2">
         <div className="font-Inter text-3xl tracking-wide leading-7 font-semibold text-start flex-start bg-button">
           {title}
         </div>
@@ -202,7 +134,7 @@ export const ProductCard4: FC<ProductCardType> = ({
 }: ProductCardType) => {
   return (
     <div className="flex flex-col space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
-      <div className="p-2 bg-[#F3F4FD] drop-shadow-lg m-8">
+      <div className="bg-[#F3F4FD] drop-shadow-lg m-2">
         <Image
           src={Product4aImage}
           alt="Image1"
@@ -211,7 +143,7 @@ export const ProductCard4: FC<ProductCardType> = ({
           layout="responsive"
         />
       </div>
-      <div className="p-4 space-y-4">
+      <div className="p-2 space-y-2">
         <div className="font-Inter text-3xl tracking-wide leading-7 font-semibold text-start flex-start bg-button">
           {title}
         </div>
@@ -234,18 +166,11 @@ const Products: NextPage = () => {
           <h1 className="mx-12 lg:mx-24 mt-8 font-Inter font-bold text-3xl lg:text-3xl  md:mt-8 capitalize leading-10 tracking-wide  text-start border-b-2 pb-2 border-[#000]">
             Our Products in Market
           </h1>
-          <div className="mx-12 lg:mx-24 grid lg:grid-cols-2 gap-8 md:grid-cols-1 grid-cols-1">
+          <div className="mx-12 lg:mx-24 grid lg:grid-cols-2 gap-4 md:grid-cols-1 grid-cols-1">
             <ProductCard title="10W and 12W">
               <ul className="space-y-2 list-disc list-outside pl-4">
                 <li className="">Brand Anchor Single port USB charger socket</li>
-                <li>Connector Type	USB</li>
-                <li>Compatible Devices	PC</li>
-                <li>Compatible Phone Models	Usb</li>
-                <li> Included Components	1 Piece Roma Modular 2.4amp USB Charger 5000 mA 5V Dc</li>
-                <li>Special Feature	Fast Charging</li>
-                <li> Colour	White</li >
                 <li> Input Voltage	220 Volts</li >
-                <li>Mounting Type	Box</li >
                 <li>Compliant with QC 2.0 and QC 3.0</li>
                 <li>
                   Avaialable in 30+ varieties (Roma, Penta Modular, GM, Orient
@@ -253,78 +178,6 @@ const Products: NextPage = () => {
                 </li>
               </ul>
             </ProductCard>
-            <ProductCard2 title="10W and 12W">
-              <ul className="space-y-2 list-disc list-outside pl-4">
-                <li className="">Brand Anchor Single port USB charger socket</li>
-                <li>Connector Type	USB</li>
-                <li>Compatible Devices	PC</li>
-                <li>Compatible Phone Models	Usb</li>
-                <li> Included Components	1 Piece Roma Modular 2.4amp USB Charger 5000 mA 5V Dc</li>
-                <li>Special Feature	Fast Charging</li>
-                <li> Colour	White</li >
-                <li> Input Voltage	220 Volts</li >
-                <li>Mounting Type	Box</li >
-                <li>Compliant with QC 2.0 and QC 3.0</li>
-                <li>
-                  Avaialable in 30+ varieties (Roma, Penta Modular, GM, Orient
-                  etc)
-                </li>
-              </ul>
-            </ProductCard2>
-            <ProductCard8 title="10W and 12W">
-              <ul className="space-y-2 list-disc list-outside pl-4">
-                <li className="">Brand Anchor Single port USB charger socket</li>
-                <li>Connector Type	USB</li>
-                <li>Compatible Devices	PC</li>
-                <li>Compatible Phone Models	Usb</li>
-                <li> Included Components	1 Piece Roma Modular 2.4amp USB Charger 5000 mA 5V Dc</li>
-                <li>Special Feature	Fast Charging</li>
-                <li> Colour	White</li >
-                <li> Input Voltage	220 Volts</li >
-                <li>Mounting Type	Box</li >
-                <li>Compliant with QC 2.0 and QC 3.0</li>
-                <li>
-                  Avaialable in 30+ varieties (Roma, Penta Modular, GM, Orient
-                  etc)
-                </li>
-              </ul>
-            </ProductCard8>
-            <ProductCard7 title="10W and 12W">
-              <ul className="space-y-2 list-disc list-outside pl-4">
-                <li className="">Brand Anchor Single port USB charger socket</li>
-                <li>Connector Type	USB</li>
-                <li>Compatible Devices	PC</li>
-                <li>Compatible Phone Models	Usb</li>
-                <li> Included Components	1 Piece Roma Modular 2.4amp USB Charger 5000 mA 5V Dc</li>
-                <li>Special Feature	Fast Charging</li>
-                <li> Colour	White</li >
-                <li> Input Voltage	220 Volts</li >
-                <li>Mounting Type	Box</li >
-                <li>Compliant with QC 2.0 and QC 3.0</li>
-                <li>
-                  Avaialable in 30+ varieties (Roma, Penta Modular, GM, Orient
-                  etc)
-                </li>
-              </ul>
-            </ProductCard7>
-            <ProductCard5 title="10W and 12W">
-              <ul className="space-y-2 list-disc list-outside pl-4">
-                <li className="">Brand Anchor Single port USB charger socket</li>
-                <li>Connector Type	USB</li>
-                <li>Compatible Devices	PC</li>
-                <li>Compatible Phone Models	Usb</li>
-                <li> Included Components	1 Piece Roma Modular 2.4amp USB Charger 5000 mA 5V Dc</li>
-                <li>Special Feature	Fast Charging</li>
-                <li> Colour	White</li >
-                <li> Input Voltage	220 Volts</li >
-                <li>Mounting Type	Box</li >
-                <li>Compliant with QC 2.0 and QC 3.0</li>
-                <li>
-                  Avaialable in 30+ varieties (Roma, Penta Modular, GM, Orient
-                  etc)
-                </li>
-              </ul>
-            </ProductCard5>
             <ProductCard6 title="18W (QCPD)">
               <ul className="space-y-2 list-disc list-outside pl-4">
                 <li className="">Dual port USB charger socket</li>
@@ -337,7 +190,7 @@ const Products: NextPage = () => {
             Future Products
           </h1>
 
-          <div className="mx-12 lg:mx-24 grid lg:grid-cols-2 gap-8 md:grid-cols-1 grid-cols-1">
+          <div className="mx-12 lg:mx-24 grid lg:grid-cols-2 gap-2 md:grid-cols-1 grid-cols-1">
             <ProductCard3 title="E1">
               <ul className="space-y-2 list-disc list-outside pl-4">
                 <li className="">

@@ -8,8 +8,8 @@ import { HiMenu, HiX } from "react-icons/hi";
 const Navbar: FC = () => {
   const [isToggle, setIsToggle] = useState(true);
 
-  const LinksText = ["About Us", "Products", "Blogs",  "Contact Us"];
-  const Links = ["/about-us", "/products", "/blogs",  "/#contact-us"];
+  const LinksText = ["About Us", "Products", "Blogs", "Contact Us"];
+  const Links = ["/about-us", "/products", "/blogs", "/#contact-us"];
   return (
     <>
       {/* Medium to large Screens */}
@@ -37,9 +37,8 @@ const Navbar: FC = () => {
 
       {/* Mobile Screens */}
       <nav
-        className={`flex md:hidden w-full px-2 md:px-24 sticky top-0 z-50 bg-[#fff] drop-shadow-sm   ${
-          !isToggle ? "flex-col h-screen mx-0   scrollbar-hide" : ""
-        }`}>
+        className={`flex md:hidden w-full px-2 md:px-24 sticky top-0 z-50 bg-[#fff] drop-shadow-sm   ${!isToggle ? "flex-col h-screen mx-0   scrollbar-hide" : ""
+          }`}>
         <div className="flex justify-between items-center w-full">
           <Link href="/" className="">
             <div className="flex  items-center space-x-1 cursor-pointer">

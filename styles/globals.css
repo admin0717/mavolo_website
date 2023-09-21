@@ -53,3 +53,42 @@ body {
   font-size: 30px;
   font-weight: bold;
 }
+
+.size-text {
+  font-size: 15px !important;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  line-height: 1.5em;
+  max-width: auto;
+  min-height: 50px;
+  padding: 13px;
+  position: relative;
+  text-align: left;
+  width: 85%;
+  z-index: 0;
+}
+
+li {
+  font-size: 12px;
+}
+
+.abouttxt {
+  font-size: 25px !important;
+}
