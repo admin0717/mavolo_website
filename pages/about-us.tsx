@@ -19,8 +19,8 @@ const AboutUs: NextPage = () => {
             1) Electricity<br />
             2) Water Supply<br />
             3) Fire ( Gas cylinder)<br />
-            4)Next things<br />
-            5) Charging
+            4) Next things<br />
+            5) Charging  <br />
             6) Internet<br />
 
             We are starting with integrated chargers in your vicinity for that we have visualized human interaction with its surroundings and we noticed that we charge our gadgets around our working desk and bed. So we have designed chargers which can be integrated near our desk and bedside. These chargers are smart and charge your smartphone/ gadgets optimally as per the load needed.
