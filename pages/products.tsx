@@ -16,7 +16,7 @@ import type { NextPage } from "next";
 import Image, { StaticImageData } from "next/image";
 import type { FC } from "react";
 import FloatingWhatsApp from "react-floating-whatsapp";
-import Products2 from "./Products2";
+
 
 export interface ProductCardType {
   title: String;
