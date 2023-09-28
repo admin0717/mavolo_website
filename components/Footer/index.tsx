@@ -55,8 +55,8 @@ const Footer: FC = () => {
               Noida Gautam Buddha Nagar ,  <br />
               India - 201301
             </div>
-            <div>Mob- +91 9787093848, <br />
-              tel- 0120-4127037</div>
+            <div>Mob- +91 8861587589, 7892653145, 9787093848, <br />
+              Tel- 0120-4127037</div>
           </div>
           <div className="lg:w-1/3 flex items-start justify-center lg:space-x-12 space-x-4 lg:mr-10">
             {/* <div className="lg:w-1/2 flex flex-col items-start justify-center">
