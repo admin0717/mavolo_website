@@ -13,7 +13,7 @@ export { default as ODMImage } from "./ODM.png";
 export { default as OEMImage } from "./OEM.png";
 export { default as OurLocationImage } from "./OurLocation.png";
 export { default as Product1aImage } from "./Products/Product1a.jpeg";
-export { default as Product1bImage } from "./Products/Product1b.jpeg";
+export { default as Product1bImage } from "./Products/Product1b.png";
 export { default as Product1cImage } from "./Products/Product1c.jpeg";
 export { default as Product1dImage } from "./Products/Product1d.jpeg";
 export { default as Product2aImage } from "./Products/Product2a.png";

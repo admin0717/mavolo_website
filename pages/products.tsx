@@ -22,7 +22,9 @@ export interface ProductCardType {
   title: String;
   children: React.ReactNode;
 }
-
+function sayHello() {
+  alert('Hello!');
+}
 
 export const ProductCard: FC<ProductCardType> = ({
   title,
@@ -33,10 +35,10 @@ export const ProductCard: FC<ProductCardType> = ({
       <div className="bg-[#F3F4FD] drop-shadow-lg m-8" >
         <Image
           src={Product1bImage}
-
+          onClick={sayHello}
           alt="Image1"
           width="200"
-          height="150"
+          height="160"
           layout="responsive"
         />
 
@@ -63,7 +65,7 @@ export const ProductCard2: FC<ProductCardType> = ({
           src={Product1aImage}
           alt="Image1"
           width="200"
-          height="150"
+          height="200"
           layout="responsive"
         />
       </div>
@@ -76,9 +78,6 @@ export const ProductCard2: FC<ProductCardType> = ({
     </div>
   );
 };
-
-
-
 export const ProductCard6: FC<ProductCardType> = ({
   title,
   children,
@@ -90,7 +89,7 @@ export const ProductCard6: FC<ProductCardType> = ({
           src={Product2bImage}
           alt="Image1"
           width="250"
-          height="190"
+          height="200"
           layout="responsive"
         />
       </div>
@@ -111,7 +110,7 @@ export const ProductCard3: FC<ProductCardType> = ({
     <div className="flex flex-col  space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
       <div className="bg-[#F3F4FD] drop-shadow-lg m-2">
         <Image
-          src={Product3aImage}
+          src={Product4aImage}
           alt="Image1"
           width="200"
           height="120"
@@ -136,7 +135,7 @@ export const ProductCard4: FC<ProductCardType> = ({
     <div className="flex flex-col space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
       <div className="bg-[#F3F4FD] drop-shadow-lg m-2">
         <Image
-          src={Product4aImage}
+          src={Product3aImage}
           alt="Image1"
           width="200"
           height="120"
@@ -178,7 +177,7 @@ const Products: NextPage = () => {
                 </li>
               </ul>
             </ProductCard>
-            <ProductCard6 title="18W (QCPD)">
+            <ProductCard6 title="RUSH 22W">
               <ul className="space-y-2 list-disc list-outside pl-4">
                 <li className="">Dual port USB charger socket</li>
                 <li>Compliant with QC 2.3, QC 4+ and PD 3.0</li>
