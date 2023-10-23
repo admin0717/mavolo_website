@@ -21,11 +21,6 @@ export interface ProductCardType {
   title: String;
   children: React.ReactNode;
 }
-const [count, setCount] = useState(0);
-
-function handleClick() {
-  setCount(count + 1);
-}
 
 export const ProductCard: FC<ProductCardType> = ({
   title,
@@ -36,7 +31,6 @@ export const ProductCard: FC<ProductCardType> = ({
       <div className="bg-[#F3F4FD] drop-shadow-lg m-8" >
         <Image
           src={Product1bImage}
-          onClick={handleClick}
           alt="Image1"
           width="200"
           height="160"
@@ -88,7 +82,6 @@ export const ProductCard6: FC<ProductCardType> = ({
       <div className="p-2 bg-[#F3F4FD] drop-shadow-lg m-8">
         <Image
           src={Product2bImage}
-          onClick={handleClick}
           alt="Image1"
           width="250"
           height="200"
