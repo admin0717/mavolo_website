@@ -10,7 +10,7 @@ const Blogs: NextPage = () => {
       <div className="container w-full scroll-smooth mx-auto">
         <Navbar />
         <div className="flex justify-center items-center container my-auto">
-          <Image src={ComingSoonImage} alt="Coming Soon" />
+          <a href="https://mavoloblog.in/">Mavoloblog</a>
         </div>
 
         <Footer />
