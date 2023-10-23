@@ -14,8 +14,8 @@ async function sendEmail(req, res) {
     });
 
     await transporter.sendMail({
-      to: "support@mavolo.in", // Your email where you'll receive emails
-      from: "barundebnath91@gmail.com", // your website email address here
+      to: "info@mavolo.in", // Your email where you'll receive emails
+      from: "zaya.husain@mavolo.in", // your website email address here
       subject: `Mavolo Website Query: ${req.body.fullname} : ${req.body.phone}`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="en">

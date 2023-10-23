@@ -1,5 +1,5 @@
 import { Navbar } from "@components";
-
+import { useState } from 'react';
 import {
   Product1bImage,
   Product1dImage,
@@ -16,14 +16,15 @@ import type { NextPage } from "next";
 import Image, { StaticImageData } from "next/image";
 import type { FC } from "react";
 import FloatingWhatsApp from "react-floating-whatsapp";
-
-
+import ComponentOne from "./ComponentOne";
 export interface ProductCardType {
   title: String;
   children: React.ReactNode;
 }
-function sayHello() {
-  alert('Hello!');
+const [count, setCount] = useState(0);
+
+function handleClick() {
+  setCount(count + 1);
 }
 
 export const ProductCard: FC<ProductCardType> = ({
@@ -35,7 +36,7 @@ export const ProductCard: FC<ProductCardType> = ({
       <div className="bg-[#F3F4FD] drop-shadow-lg m-8" >
         <Image
           src={Product1bImage}
-          onClick={sayHello}
+          onClick={handleClick}
           alt="Image1"
           width="200"
           height="160"
@@ -87,6 +88,7 @@ export const ProductCard6: FC<ProductCardType> = ({
       <div className="p-2 bg-[#F3F4FD] drop-shadow-lg m-8">
         <Image
           src={Product2bImage}
+          onClick={handleClick}
           alt="Image1"
           width="250"
           height="200"
