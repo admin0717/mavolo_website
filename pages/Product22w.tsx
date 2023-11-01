@@ -62,8 +62,7 @@ const Blogs: NextPage = () => {
               </div>
               <div className="mx-12 lg:mx-24 grid">
                 <h4 className="space-y-12"><b>A Solution for Integrated Lifestyle</b></h4>
-                <p className="space-y-12">
-                  Rush is designed to seamlessly integrate into your lifestyle. Experience the powerful charging at your bedside and workspace. it's a solution that redefines convenience, efficiency, and safety in charging your devices.
+                <p className="space-y-12">Rush is designed to seamlessly integrate into your lifestyle. Experience the powerful charging at your bedside and workspace. it's a solution that redefines convenience, efficiency, and safety in charging your devices.
                 </p></div>
               <div className="space-y-2 list-disc list-outside pl-4  producttext">
 
@@ -74,20 +73,16 @@ const Blogs: NextPage = () => {
                   height="160"
                   layout="responsive"
                 />
-
                 <div>
-                  <div className=""><h2 className="ph1 mt-2">High-Speed Charging </h2></div>
+                  <div className=""><h2 className="ph1 mt-2">High-Speed Charging</h2></div>
                   <p className="ph1 mt-5">Gives you the power to charge your smartphone from 0-50% in under 30 minutes.
                     15 min charge = 3+hours of video experience
                   </p>
                 </div>
-
               </div>
               <div className="space-y-2 list-disc list-outside pl-4  producttext">
-
-
                 <div>
-                  <div className=""><h2 className="ph1 mt-2">Rush Technology </h2><h3>Smart   Reliable    Efficient
+                  <div className=""><h2 className="ph1 mt-2">Rush Technology</h2><h3>Smart Reliable Efficient
                   </h3></div>
                   <p className="ph1 mt-5">Keep your mind at ease and let it charge your device. Smartly optimizes power using all the industry-leading charging protocols. It does a handshake with the target device before charging, ensuring efficient and reliable power delivery, and cuts off the current when the battery reaches 100% SOC.
                   </p>
@@ -119,11 +114,8 @@ const Blogs: NextPage = () => {
 
               </div>
               <div className="space-y-2 list-disc list-outside pl-4  producttext">
-
-
                 <div className="ph1 mt-2">
-                  <div className=""><h1 className="ph1 mt-2">Not just a phone Charger
-                  </h1></div>
+                  <div className=""><h1 className="ph1 mt-2">Not just a phone Charger</h1></div>
                   <p className="ph1 mt-5">Embracing All Your Gadgets. From smartphones to smartwatches, headphones to tablets, it's your go-to power source for everything USB; eliminating the need for multiple chargers cluttering your space.
                   </p>
                 </div>
@@ -134,10 +126,8 @@ const Blogs: NextPage = () => {
                   height="160"
                   layout="responsive"
                 />
-
               </div>
               <div className="space-y-2 list-disc list-outside pl-4  producttext">
-
                 <Image
                   src={Product1bImage}
                   alt="Image1"
@@ -145,23 +135,18 @@ const Blogs: NextPage = () => {
                   height="160"
                   layout="responsive"
                 />
-
                 <div className="ph1 mt-2">
                   <div className=""><h2 className="ph1 mt-2">Relax & Charge</h2></div>
                   <p className="ph1 mt-5">Rush is a reliable guardian of your devices. With Surge, Overheating, Overvaltage, and Short-Circuit Safeguards, Your Gadgets Stay Securely Charged.
                   </p>
                 </div>
-
               </div>
-
               <h1 className="mx-12 lg:mx-24 mt-8 font-Inter font-bold text-3xl lg:text-3xl  md:mt-8 capitalize leading-10 tracking-wide  text-start border-b-2 pb-2 border-[#000]">
                 Products Description
               </h1>
               <div className="mx-12 lg:mx-24 grid lg:grid-cols-2 gap-2 md:grid-cols-1 grid-cols-1">
                 <p>Imagine the convenience of having the luxury of charging at your bedside and office table. Rush 22W is an evolved modular USB Charger socket that sits into any standard electricity socket at your bedside and understands your device's needs, engaging in a digital handshake to ensure the most optimal charging. You can increase your productivity without having to worry about device safety, charging time, and cluttering wires. Rush 22W is a compact powerhouse designed to elevate your charging experience to new heights.</p>
-
-                <p> <b> What is Rush</b> <br />It is an approach to charging that combines intelligence, efficiency and safety. By encompassing advanced features like communication with devices, auto cutoff, and a comprehensive array of protective measures, Rush Technology is poised to transform the way we charge our devices, providing a hassle-free and secure charging experience that meets the demands of modern technology.. Here's how Rush Technology stands out:</p>
-
+                <p><b>What is Rush</b><br />It is an approach to charging that combines intelligence, efficiency and safety. By encompassing advanced features like communication with devices, auto cutoff, and a comprehensive array of protective measures, Rush Technology is poised to transform the way we charge our devices, providing a hassle-free and secure charging experience that meets the demands of modern technology.. Here's how Rush Technology stands out:</p>
               </div>
               <div className="mx-12 lg:mx-24 grid lg:grid-cols-2 gap-2 md:grid-cols-1 grid-cols-1">
                 <p>1. Comprehensive Charging Protocols: Rush Technology incorporates all the industry-leading charging protocols like PPS(Programmable Power Supply), PD(Power Delivery), and QC(Quick charge), ensuring that it can adapt to the specific needs of a wide array of devices and charge them faster.</p> <p>2. Device Communication: Before initiating the charging process, Rush performs a digital handshake with the target device. This intelligent communication ensures efficient and optimized fast charging, delivering the right power to your device. Your device and charger work together seamlessly to provide the best possible charging conditions.</p>
@@ -169,12 +154,8 @@ const Blogs: NextPage = () => {
                   3. Auto Cut Off: Rush is equipped with an auto-cutoff feature that activates when the battery reaches 100% State of Charge (SOC). This safeguard prevents overcharging, which ensures the long-term health of your device's battery and also helps conserve energy.
                 </p>
                 <p>4. Ripple-Free Voltage: Dual input and output filters are integrated into Rush Technology, for a steady and ripple-free output voltage. This ensures that your devices are charged smoothly and efficiently without voltage fluctuations that could cause damage or slow down the charging process. </p>
-
-
                 <p>5. Efficient Power Switching: Fast switch synchronous rectifiers are employed in Rush Technology to manage power switching effectively. It optimizes the power transfer, reducing energy wastage and ensuring that your charging process is efficient.</p>
-
                 <p>6. Comprehensive Protection: Safety is a top priority with Rush. It offers protection against a range of potential issues, including Over Voltage (OV), Over Current (OC), Under Voltage (UC), surge protection, and thermal management. These safeguards ensure that your devices remain secure and free from damage during the charging process. Therefore leading to amazing thermal performance.</p>
-
               </div>
               <div className="mx-12 lg:mx-24 grid lg:grid-cols-2 gap-2 md:grid-cols-1 grid-cols-1">
                 <p>

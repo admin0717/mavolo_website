@@ -78,13 +78,10 @@ const Blogs: NextPage = () => {
                                     15 min charge = 3+hours of video experience
                                 </p>
                             </div>
-
                         </div>
                         <div className="space-y-2 list-disc list-outside pl-4  producttext">
-
-
                             <div>
-                                <div className=""><h2 className="ph1 mt-2">Rush Technology </h2><h3>Smart   Reliable    Efficient
+                                <div className=""><h2 className="ph1 mt-2">Rush Technology</h2><h3>Smart Reliable  Efficient
                                 </h3></div>
                                 <p className="ph1 mt-5">Keep your mind at ease and let it charge your device. Smartly optimizes power using all the industry-leading charging protocols. It does a handshake with the target device before charging, ensuring efficient and reliable power delivery, and cuts off the current when the battery reaches 100% SOC.
                                 </p>
@@ -153,7 +150,7 @@ const Blogs: NextPage = () => {
                         <div className="mx-12 lg:mx-24 grid lg:grid-cols-2 gap-2 md:grid-cols-1 grid-cols-1">
                             <p>Imagine the convenience of having the luxury of charging at your bedside and office table. USB 12W is an evolved modular USB Charger socket that sits into any standard electricity socket at your bedside and understands your device's needs, engaging in a digital handshake to ensure the most optimal charging. You can increase your productivity without having to worry about device safety, charging time, and cluttering wires. USB 12W is a compact powerhouse designed to elevate your charging experience to new heights.</p>
 
-                            <p> <b> What is Rush</b> <br />It is an approach to charging that combines intelligence, efficiency and safety. By encompassing advanced features like communication with devices, auto cutoff, and a comprehensive array of protective measures, Rush Technology is poised to transform the way we charge our devices, providing a hassle-free and secure charging experience that meets the demands of modern technology.. Here's how Rush Technology stands out:</p>
+                            <p><b>What is Rush</b><br />It is an approach to charging that combines intelligence, efficiency and safety. By encompassing advanced features like communication with devices, auto cutoff, and a comprehensive array of protective measures, Rush Technology is poised to transform the way we charge our devices, providing a hassle-free and secure charging experience that meets the demands of modern technology.. Here's how Rush Technology stands out:</p>
 
                         </div>
                         <div className="mx-12 lg:mx-24 grid lg:grid-cols-2 gap-2 md:grid-cols-1 grid-cols-1">
@@ -162,12 +159,8 @@ const Blogs: NextPage = () => {
                                 3. Auto Cut Off: Rush is equipped with an auto-cutoff feature that activates when the battery reaches 100% State of Charge (SOC). This safeguard prevents overcharging, which ensures the long-term health of your device's battery and also helps conserve energy.
                             </p>
                             <p>4. Ripple-Free Voltage: Dual input and output filters are integrated into Rush Technology, for a steady and ripple-free output voltage. This ensures that your devices are charged smoothly and efficiently without voltage fluctuations that could cause damage or slow down the charging process. </p>
-
-
                             <p>5. Efficient Power Switching: Fast switch synchronous rectifiers are employed in Rush Technology to manage power switching effectively. It optimizes the power transfer, reducing energy wastage and ensuring that your charging process is efficient.</p>
-
                             <p>6. Comprehensive Protection: Safety is a top priority with Rush. It offers protection against a range of potential issues, including Over Voltage (OV), Over Current (OC), Under Voltage (UC), surge protection, and thermal management. These safeguards ensure that your devices remain secure and free from damage during the charging process. Therefore leading to amazing thermal performance.</p>
-
                         </div>
                         <div className="mx-12 lg:mx-24 grid lg:grid-cols-2 gap-2 md:grid-cols-1 grid-cols-1">
                             <p>
