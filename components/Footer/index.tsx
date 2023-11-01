@@ -73,16 +73,13 @@ const Footer: FC = () => {
               <Link href="/products">
                 <a className="text-lg font-Inter hover:border-b-2">Products</a>
               </Link>
-              <Link href="/blogs">
+              <Link href="https://mavoloblog.in/">
                 <a className="text-lg font-Inter hover:border-b-2">Blogs</a>
               </Link>
               <Link href="#inquire">
                 <a className="text-lg font-Inter hover:border-b-2">
                   Write to us
                 </a>
-              </Link>
-              <Link href="/career">
-                <a className="text-lg font-Inter hover:border-b-2">Career</a>
               </Link>
             </div>
           </div>

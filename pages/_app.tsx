@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="q7zEgAze2nizXNJs4e0X0HaWTQzWpbc2Hs4QiaXtWS8"
           key="google-site-verification"
         />
+
       </Head>
 
       <Script

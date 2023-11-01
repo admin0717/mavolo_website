@@ -92,3 +92,13 @@ li {
 .abouttxt {
   font-size: 25px !important;
 }
+
+.ph1 {
+  text-align: center
+}
+
+.producttext {
+  display: inline-flex;
+  background-color: rgba(85, 87, 87, 0.606);
+
+}

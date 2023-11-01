@@ -1,4 +1,5 @@
 import { Navbar } from "@components";
+import React, { useState } from 'react';
 import {
   Product1bImage,
   Product1dImage,
@@ -15,6 +16,8 @@ import type { NextPage } from "next";
 import Image, { StaticImageData } from "next/image";
 import type { FC } from "react";
 import FloatingWhatsApp from "react-floating-whatsapp";
+import Mycomponent from "./Product12w";
+// import { Blogs } from 'react-router-dom';
 export interface ProductCardType {
   title: String;
   children: React.ReactNode;
@@ -24,17 +27,24 @@ export const ProductCard: FC<ProductCardType> = ({
   title,
   children,
 }: ProductCardType) => {
+
+
+  const handleClick2 = () => {
+    window.location.href = '/Product12w';
+  }
+
   return (
     <div className="flex flex-col  space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
       <div className="bg-[#F3F4FD] drop-shadow-lg m-8" >
-        <Image
-          src={Product1bImage}
-          alt="Image1"
-          width="200"
-          height="160"
-          layout="responsive"
-        />
-
+        <div onClick={handleClick2}>
+          <Image
+            src={Product1bImage}
+            alt="Image1"
+            width="200"
+            height="160"
+            layout="responsive"
+          />
+        </div>
       </div>
       <div className="p-4 space-y-4 ">
         <div className="font-Inter text-3xl tracking-wide leading-7 font-semibold text-start flex-start bg-button">
@@ -51,11 +61,14 @@ export const ProductCard2: FC<ProductCardType> = ({
   title,
   children,
 }: ProductCardType) => {
+
   return (
     <div className="flex flex-col  space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
-      <div className="bg-[#F3F4FD] drop-shadow-lg m-8">
+      <div className="bg-[#F3F4FD] drop-shadow-lg m-8" >
+
         <Image
           src={Product1aImage}
+
           alt="Image1"
           width="200"
           height="200"
@@ -75,16 +88,21 @@ export const ProductCard6: FC<ProductCardType> = ({
   title,
   children,
 }: ProductCardType) => {
+
+  const handleClick = () => {
+    window.location.href = '/Product22w';
+  }
   return (
     <div className="flex flex-col  space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
       <div className="p-2 bg-[#F3F4FD] drop-shadow-lg m-8">
-        <Image
-          src={Product2bImage}
-          alt="Image1"
-          width="250"
-          height="200"
-          layout="responsive"
-        />
+        <div onClick={handleClick}>
+          <Image
+            src={Product2bImage}
+            alt="Image1"
+            width="250"
+            height="200"
+            layout="responsive"
+          /></div>
       </div>
       <div className="p-2 space-y-2">
         <div className="font-Inter text-3xl tracking-wide leading-7 font-semibold text-start flex-start bg-button">
@@ -94,6 +112,7 @@ export const ProductCard6: FC<ProductCardType> = ({
       </div>
     </div>
   );
+
 };
 export const ProductCard3: FC<ProductCardType> = ({
   title,
