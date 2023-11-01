@@ -55,7 +55,6 @@ const Blogs: NextPage = () => {
                             <h4 className="space-y-12"><b>A Solution for Integrated Lifestyle</b></h4>
                             <p className="space-y-12">Rush is designed to seamlessly integrate into your lifestyle. Experience the powerful charging at your bedside and workspace. it's a solution that redefines convenience, efficiency, and safety in charging your devices.</p></div>
                         <div className="space-y-2 list-disc list-outside pl-4  producttext">
-
                             <Image
                                 src={Product1bImage}
                                 alt="Image1"
@@ -96,8 +95,7 @@ const Blogs: NextPage = () => {
                             />
                             <div>
                                 <div className=""><h1 className="ph1 mt-2">Small yet Powerful</h1></div>
-                                <p className="ph1 mt-5">Designed to fit seamlessly into any standard electricity socket in your home, The sleek and modern design seamlessly integrates into your room's decor.
-                                </p>
+                                <p className="ph1 mt-5">Designed to fit seamlessly into any standard electricity socket in your home, The sleek and modern design seamlessly integrates into your room's decor.</p>
                             </div>
                         </div>
                         <div className="space-y-2 list-disc list-outside pl-4  producttext">
