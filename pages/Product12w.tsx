@@ -65,8 +65,13 @@ const Blogs: NextPage = () => {
                             </p></div>
                         <div className="space-y-2 list-disc list-outside pl-4  producttext">
 
-                            <img src="" className="img-fluid" width={720} height={400} alt="..."></img>
-
+                            <Image
+                                src={Product1bImage}
+                                alt="Image1"
+                                width="200"
+                                height="160"
+                                layout="responsive"
+                            />
                             <div>
                                 <div className=""><h2 className="ph1 mt-2">High-Speed Charging </h2></div>
                                 <p className="ph1 mt-5">Gives you the power to charge your smartphone from 0-50% in under 30 minutes.
@@ -84,13 +89,23 @@ const Blogs: NextPage = () => {
                                 <p className="ph1 mt-5">Keep your mind at ease and let it charge your device. Smartly optimizes power using all the industry-leading charging protocols. It does a handshake with the target device before charging, ensuring efficient and reliable power delivery, and cuts off the current when the battery reaches 100% SOC.
                                 </p>
                             </div>
-                            <img src="" className="img-fluid" width={720} height={400} alt="..."></img>
-
+                            <Image
+                                src={Product1bImage}
+                                alt="Image1"
+                                width="200"
+                                height="160"
+                                layout="responsive"
+                            />
                         </div>
                         <div className="space-y-2 list-disc list-outside pl-4  producttext">
 
-                            <img src="" className="img-fluid" width={720} height={400} alt="..."></img>
-
+                            <Image
+                                src={Product1bImage}
+                                alt="Image1"
+                                width="200"
+                                height="160"
+                                layout="responsive"
+                            />
                             <div>
                                 <div className=""><h1 className="ph1 mt-2">Small yet Powerful</h1></div>
                                 <p className="ph1 mt-5">Designed to fit seamlessly into any standard electricity socket in your home, The sleek and modern design seamlessly integrates into your room's decor.
@@ -107,13 +122,23 @@ const Blogs: NextPage = () => {
                                 <p className="ph1 mt-5">Embracing All Your Gadgets. From smartphones to smartwatches, headphones to tablets, it's your go-to power source for everything USB; eliminating the need for multiple chargers cluttering your space.
                                 </p>
                             </div>
-                            <img src="" className="img-fluid" width={720} height={400} alt="..."></img>
-
+                            <Image
+                                src={Product1bImage}
+                                alt="Image1"
+                                width="200"
+                                height="160"
+                                layout="responsive"
+                            />
                         </div>
                         <div className="space-y-2 list-disc list-outside pl-4  producttext">
 
-                            <img src="" className="img-fluid" width={720} height={400} alt="..."></img>
-
+                            <Image
+                                src={Product1bImage}
+                                alt="Image1"
+                                width="200"
+                                height="160"
+                                layout="responsive"
+                            />
                             <div className="ph1 mt-2">
                                 <div className=""><h2 className="ph1 mt-2">Relax & Charge</h2></div>
                                 <p className="ph1 mt-5">Rush is a reliable guardian of your devices. With Surge, Overheating, Overvaltage, and Short-Circuit Safeguards, Your Gadgets Stay Securely Charged.
