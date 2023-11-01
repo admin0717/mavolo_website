@@ -6,14 +6,7 @@ import Image from "next/image";
 import FloatingWhatsApp from "react-floating-whatsapp";
 import {
     Product1bImage,
-    Product1dImage,
-    Product2cImage,
-    Product2aImage,
-    Product2bImage,
-    Product3aImage,
-    Product4aImage,
-    Product1cImage,
-    Product1aImage,
+
 
 } from "@images";
 export interface ProductCardType {
