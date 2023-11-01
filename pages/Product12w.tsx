@@ -60,9 +60,7 @@ const Blogs: NextPage = () => {
                         </div>
                         <div className="mx-12 lg:mx-24 grid">
                             <h4 className="space-y-12"><b>A Solution for Integrated Lifestyle</b></h4>
-                            <p className="space-y-12">
-                                Rush is designed to seamlessly integrate into your lifestyle. Experience the powerful charging at your bedside and workspace. it's a solution that redefines convenience, efficiency, and safety in charging your devices.
-                            </p></div>
+                            <p className="space-y-12">Rush is designed to seamlessly integrate into your lifestyle. Experience the powerful charging at your bedside and workspace. it's a solution that redefines convenience, efficiency, and safety in charging your devices.</p></div>
                         <div className="space-y-2 list-disc list-outside pl-4  producttext">
 
                             <Image
@@ -108,11 +106,8 @@ const Blogs: NextPage = () => {
                                 <p className="ph1 mt-5">Designed to fit seamlessly into any standard electricity socket in your home, The sleek and modern design seamlessly integrates into your room's decor.
                                 </p>
                             </div>
-
                         </div>
                         <div className="space-y-2 list-disc list-outside pl-4  producttext">
-
-
                             <div className="ph1 mt-2">
                                 <div className=""><h1 className="ph1 mt-2">Not just a phone Charger
                                 </h1></div>
@@ -155,16 +150,14 @@ const Blogs: NextPage = () => {
                         </div>
                         <div className="mx-12 lg:mx-24 grid lg:grid-cols-2 gap-2 md:grid-cols-1 grid-cols-1">
                             <p>1. Comprehensive Charging Protocols: Rush Technology incorporates all the industry-leading charging protocols like PPS(Programmable Power Supply), PD(Power Delivery), and QC(Quick charge), ensuring that it can adapt to the specific needs of a wide array of devices and charge them faster.</p> <p>2. Device Communication: Before initiating the charging process, Rush performs a digital handshake with the target device. This intelligent communication ensures efficient and optimized fast charging, delivering the right power to your device. Your device and charger work together seamlessly to provide the best possible charging conditions.</p>
-                            <p>
-                                3. Auto Cut Off: Rush is equipped with an auto-cutoff feature that activates when the battery reaches 100% State of Charge (SOC). This safeguard prevents overcharging, which ensures the long-term health of your device's battery and also helps conserve energy.
+                            <p>3. Auto Cut Off: Rush is equipped with an auto-cutoff feature that activates when the battery reaches 100% State of Charge (SOC). This safeguard prevents overcharging, which ensures the long-term health of your device's battery and also helps conserve energy.
                             </p>
                             <p>4. Ripple-Free Voltage: Dual input and output filters are integrated into Rush Technology, for a steady and ripple-free output voltage. This ensures that your devices are charged smoothly and efficiently without voltage fluctuations that could cause damage or slow down the charging process. </p>
                             <p>5. Efficient Power Switching: Fast switch synchronous rectifiers are employed in Rush Technology to manage power switching effectively. It optimizes the power transfer, reducing energy wastage and ensuring that your charging process is efficient.</p>
                             <p>6. Comprehensive Protection: Safety is a top priority with Rush. It offers protection against a range of potential issues, including Over Voltage (OV), Over Current (OC), Under Voltage (UC), surge protection, and thermal management. These safeguards ensure that your devices remain secure and free from damage during the charging process. Therefore leading to amazing thermal performance.</p>
                         </div>
                         <div className="mx-12 lg:mx-24 grid lg:grid-cols-2 gap-2 md:grid-cols-1 grid-cols-1">
-                            <p>
-                                But we didn't stop there USB 12W design has been optimised for a multitude of applications. It is not limited to a single type of device or scenario but can be seamlessly integrated into a wide range of modular socket plates and charging setups, making it adaptable and suitable for a wide range of use cases.
+                            <p>But we didn't stop there USB 12W design has been optimised for a multitude of applications. It is not limited to a single type of device or scenario but can be seamlessly integrated into a wide range of modular socket plates and charging setups, making it adaptable and suitable for a wide range of use cases.
                             </p>
                             <p>And when it comes to space, we understand the value of it. Our compact and space-saving design ensures that this device fits seamlessly into your home or workspace, maximizing convenience without taking up valuable room.
                             </p>
