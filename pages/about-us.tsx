@@ -1,19 +1,31 @@
-import { Footer, Navbar, TimelineComponent, TitleComponent } from "@components";
+import { Footer, ImageCarousel, Navbar, TimelineComponent, TitleComponent } from "@components";
 import type { NextPage } from "next";
 import FloatingWhatsApp from "react-floating-whatsapp";
+import {
+  Product3aImage,
+  OEMImage
 
+} from "@images";
+import Image, { StaticImageData } from "next/image";
 const AboutUs: NextPage = () => {
   return (
     <>
       <div className="container w-full mx-auto scroll-smooth">
         <Navbar />
         <div className=" lg:mx-24  text-start font-bold abouttxt border-b-2 mx-10 capitalize">
+
           About Mavolo
+          <Image
+            src={OEMImage}
+            alt="Image1"
+            width="850"
+            height="290"
+            layout="responsive"
+          />
         </div>
         <div className="lg:mx-24 mx-12 my-8 flex flex-col items-start justify-center space-y-4 font-Inter font-normal tracking-wide leading-6 text-start">
           <p>
             Introducing an integrated lifestyle...<br />
-
             Where the fundamentals are seamlessly integrated and the flawless easy interaction can be done.
             What are fundamental for human needs?<br />
             1) Electricity<br />

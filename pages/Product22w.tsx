@@ -19,7 +19,7 @@ export const ProductCard: FC<ProductCardType> = ({
 }: ProductCardType) => {
   return (
     <div className="flex flex-col  space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
-      <div className="bg-[#F3F4FD] drop-shadow-lg m-8" >
+      <div className="bg-[#F3F4FD] drop-shadow-lg m-8"  >
         <Image
           src={Product2bImage}
           alt="Image1"

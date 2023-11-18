@@ -35,7 +35,7 @@ export const ProductCard: FC<ProductCardType> = ({
 
   return (
     <div className="flex flex-col  space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
-      <div className="bg-[#F3F4FD] drop-shadow-lg m-8" >
+      <div className="bg-[#F3F4FD] drop-shadow-lg m-8" style={{ cursor: 'pointer' }}>
         <div onClick={handleClick2}>
           <Image
             src={Product1bImage}
@@ -64,7 +64,7 @@ export const ProductCard2: FC<ProductCardType> = ({
 
   return (
     <div className="flex flex-col  space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
-      <div className="bg-[#F3F4FD] drop-shadow-lg m-8" >
+      <div className="bg-[#F3F4FD] drop-shadow-lg m-8" style={{ cursor: 'pointer' }}>
 
         <Image
           src={Product1aImage}
@@ -94,7 +94,7 @@ export const ProductCard6: FC<ProductCardType> = ({
   }
   return (
     <div className="flex flex-col  space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
-      <div className="p-2 bg-[#F3F4FD] drop-shadow-lg m-8">
+      <div className="p-2 bg-[#F3F4FD] drop-shadow-lg m-8" style={{ cursor: 'pointer' }}>
         <div onClick={handleClick}>
           <Image
             src={Product2bImage}

@@ -26,7 +26,7 @@ const Home: NextPage = () => {
       </div>
       <div className="z-80">
         <FloatingWhatsApp
-          phoneNumber={"+917892653145"}
+          phoneNumber={"7892653145"}
           accountName={"Mavolo"}
           avatar="/images/WhatsappIcon.jpeg"
         />
