@@ -40,7 +40,8 @@ export const ProductCard: FC<ProductCardType> = ({
 
 const Blogs: NextPage = () => {
     return (
-        <>
+        <> <div className="container w-full scroll-smooth mx-auto">
+            <Navbar />
             <div className="flex flex-col  space-y-2 rounded-xl bg-[#fff] border-2 border-blurBG">
                 <div className="p-2 bg-[#F3F4FD] drop-shadow-lg m-8">
                     <div className="space-y-12">
@@ -85,7 +86,7 @@ const Blogs: NextPage = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div></div>
             <FloatingWhatsApp
                 phoneNumber={"+916355041150"}
                 accountName={"Mavolo"}
