@@ -9,20 +9,14 @@ const Services: FC = () => {
         <div
           className=" mt-2 font-Inter font-bold text-3xl lg:text-3xl  md:mt-2 capitalize leading-10 tracking-wide  text-start border-b-2 pb-2 border-buttonBG"
         >
+          <h1>RUSH technology in action</h1>
         </div>
         <div className="flex flex-col justify-center lg:items-start items-center lg:flex-row bg-[#FFFFFF]  lg:space-x-6 space-y-8 lg:space-y-0  mt-3">
           <div className="embed-responsive embed-responsive-16by9">
-            <iframe className="embed-responsive-item" src="./images/Products/Rush22_V2.mp4" width={300} height={200}></iframe>
+            <iframe className="embed-responsive-item" src="./images/Products/Rush22_V2.mp4" width={700} height={360}></iframe>
 
           </div>
-          <div className="embed-responsive embed-responsive-16by9">
-            <iframe className="embed-responsive-item" src="./images/Products/Rush22_V2.mp4" width={300} height={200}></iframe>
 
-          </div>
-          <div className="embed-responsive embed-responsive-16by9">
-            <iframe className="embed-responsive-item" src="./images/Products/Rush22_V2.mp4" width={300} height={200} ></iframe>
-
-          </div>
         </div>
       </div>
       <div className="lg:mx-24 mx-12">

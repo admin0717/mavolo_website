@@ -50,34 +50,29 @@ const Blogs: NextPage = () => {
                 Products RUSH 22W  USB  Charger
               </h1>
               <div className="space-y-2 list-disc list-outside pl-4">
-                <h1 className="ph1 font-bold text-3xl lg:text-3xl"><b>Mavolo RUSH 22W</b></h1>
-                <h2 className="ph1"><b>Modular USB Fast Charging Socket</b></h2>
+                <h1 className="text-center font-bold text-3xl lg:text-3xl"><b>Mavolo RUSH 22W</b></h1>
+                <h2 className="text-center"><b>Modular USB Fast Charging Socket</b></h2>
               </div>
-              <div className="mx-12 lg:mx-24 grid">
-                <h4 className="space-y-12"><b>A Solution for Integrated Lifestyle</b></h4>
-                <p className="space-y-12">Rush is designed to seamlessly integrate into your lifestyle. Experience the powerful charging at your bedside and workspace. it&apos;s a solution that redefines convenience, efficiency, and safety in charging your devices.
-                </p></div>
+
               <div className="space-y-2 list-disc list-outside pl-4  producttext">
 
-                <Image
-                  src={Product1bImage}
-                  alt="Image1"
-                  width="200"
-                  height="160"
-                  layout="responsive"
-                />
                 <div>
-                  <div className=""><h2 className="ph1 mt-2">High-Speed Charging</h2></div>
-                  <p className="ph1 mt-5">Gives you the power to charge your smartphone from 0-50% in under 30 minutes.
+                  <div className="">
+                    <h2 className="space-y-1">A Solution for Integrated Lifestyle</h2><br />
+                    <p className="space-y-1">Rush is designed to seamlessly integrate into your lifestyle. Experience the powerful charging at your bedside and workspace. it&apos;s a solution that redefines convenience, efficiency, and safety in charging your devices.
+                    </p>
+                    <br />
+                    <h2 className="mt-2">High-Speed Charging</h2></div>
+                  <p className=" mt-5">Gives you the power to charge your smartphone from 0-50% in under 30 minutes.
                     15 min charge = 3+hours of video experience
                   </p>
                 </div>
               </div>
               <div className="space-y-2 list-disc list-outside pl-4  producttext">
                 <div>
-                  <div className=""><h2 className="ph1 mt-2">Rush Technology</h2><h3>Smart Reliable Efficient
+                  <div className=""><h2 className=" mt-2">Rush Technology</h2><h3>Smart Reliable Efficient
                   </h3></div>
-                  <p className="ph1 mt-5">Keep your mind at ease and let it charge your device. Smartly optimizes power using all the industry-leading charging protocols. It does a handshake with the target device before charging, ensuring efficient and reliable power delivery, and cuts off the current when the battery reaches 100% SOC.
+                  <p className=" mt-5">Keep your mind at ease and let it charge your device. Smartly optimizes power using all the industry-leading charging protocols. It does a handshake with the target device before charging, ensuring efficient and reliable power delivery, and cuts off the current when the battery reaches 100% SOC.
                   </p>
                 </div>
                 <Image
@@ -100,16 +95,16 @@ const Blogs: NextPage = () => {
                 />
 
                 <div>
-                  <div className=""><h1 className="ph1 mt-2">Small yet Powerful</h1></div>
-                  <p className="ph1 mt-5">Designed to fit seamlessly into any standard electricity socket in your home, The sleek and modern design seamlessly integrates into your room&apos;s decor.
+                  <div className=""><h1 className=" mt-2">Small yet Powerful</h1></div>
+                  <p className=" mt-5">Designed to fit seamlessly into any standard electricity socket in your home, The sleek and modern design seamlessly integrates into your room&apos;s decor.
                   </p>
                 </div>
 
               </div>
               <div className="space-y-2 list-disc list-outside pl-4  producttext">
-                <div className="ph1 mt-2">
-                  <div className=""><h1 className="ph1 mt-2">Not just a phone Charger</h1></div>
-                  <p className="ph1 mt-5">Embracing All Your Gadgets. From smartphones to smartwatches, headphones to tablets, it&apos;s your go-to power source for everything USB; eliminating the need for multiple chargers cluttering your space.
+                <div className=" mt-2">
+                  <div className=""><h1 className=" mt-2">Not just a phone Charger</h1></div>
+                  <p className=" mt-5">Embracing All Your Gadgets. From smartphones to smartwatches, headphones to tablets, it&apos;s your go-to power source for everything USB; eliminating the need for multiple chargers cluttering your space.
                   </p>
                 </div>
                 <Image
@@ -128,9 +123,9 @@ const Blogs: NextPage = () => {
                   height="160"
                   layout="responsive"
                 />
-                <div className="ph1 mt-2">
-                  <div className=""><h2 className="ph1 mt-2">Relax & Charge</h2></div>
-                  <p className="ph1 mt-5">Rush is a reliable guardian of your devices. With Surge, Overheating, Overvaltage, and Short-Circuit Safeguards, Your Gadgets Stay Securely Charged.
+                <div className=" mt-2">
+                  <div className=""><h2 className=" mt-2">Relax & Charge</h2></div>
+                  <p className=" mt-5">Rush is a reliable guardian of your devices. With Surge, Overheating, Overvaltage, and Short-Circuit Safeguards, Your Gadgets Stay Securely Charged.
                   </p>
                 </div>
               </div>

@@ -35,11 +35,11 @@ const Footer: FC = () => {
             <Link href="/">
               <FaFacebookSquare className="w-7 h-7 fill-[#fff] hover:fill-primaryBG" />
             </Link>
-            <Link href="/">
-              <FaInstagram className="w-7 h-7 fill-[#fff] hover:fill-primaryBG" />
+            <Link href="https://www.instagram.com/mavolo.in/">
+              <FaInstagram className="w-7 h-7 fill-[#fff] hover:fill-primaryBG" style={{ cursor: 'pointer' }} />
             </Link>
-            <Link href="/">
-              <FaTwitterSquare className="w-7 h-7 fill-[#fff] hover:fill-primaryBG" />
+            <Link href="https://twitter.com/">
+              <FaTwitterSquare className="w-7 h-7 fill-[#fff] hover:fill-primaryBG" style={{ cursor: 'pointer' }} />
             </Link>
           </div>
         </div>
