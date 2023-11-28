@@ -38,7 +38,7 @@ const Footer: FC = () => {
             <Link href="https://www.instagram.com/mavolo.in/">
               <FaInstagram className="w-7 h-7 fill-[#fff] hover:fill-primaryBG" style={{ cursor: 'pointer' }} />
             </Link>
-            <Link href="https://twitter.com/">
+            <Link href="https://twitter.com/MavoloOfficial">
               <FaTwitterSquare className="w-7 h-7 fill-[#fff] hover:fill-primaryBG" style={{ cursor: 'pointer' }} />
             </Link>
           </div>
@@ -66,7 +66,7 @@ const Footer: FC = () => {
               <Link href="/">Products</Link>
               <Link href="/">Contact Us</Link>
             </div> */}
-            <div className="lg:w-1/2 flex lg:flex-col lg:items-end items-start justify-center flex-row space-x-4 mx-4">
+            {/* <div className="lg:w-1/2 flex lg:flex-col lg:items-end items-start justify-center flex-row space-x-4 mx-4">
               <Link href="/about-us">
                 <a className="text-lg font-Inter hover:border-b-2">About us</a>
               </Link>
@@ -81,7 +81,7 @@ const Footer: FC = () => {
                   Write to us
                 </a>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="text-start text-[#fff] font-white lg:ml-20 mx-10 lg:mx-0">
