@@ -9,7 +9,7 @@ const Navbar: FC = () => {
   const [isToggle, setIsToggle] = useState(true);
 
   const LinksText = ["Home", "Services", "Products", "About Us", "Blogs", "Contact Us"];
-  const Links = ["/#Hero", "/#Services", "/products", "/about-us", "https://mavoloblog.in/", "/#contact-us"];
+  const Links = ["/#Home", "/#Services", "/products", "/about-us", "https://mavoloblog.in/", "/#contact-us"];
   return (
     <>
       {/* Medium to large Screens */}
